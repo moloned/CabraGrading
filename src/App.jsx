@@ -18,7 +18,7 @@ const IJA_LOGO = publicAsset('/clean/IJA-logo-nobg.png')
 const BELT_IMAGE = publicAsset('/belts/white.svg')
 const MASCOT_IMAGE = publicAsset('/clean/JudoMonkey-nobg.png')
 const SENIOR_MASCOT_IMAGE = publicAsset('/CabraGOATS.png')
-const DEFAULT_COACH_CSV = publicAsset('/CabraMembers.csv')
+const DEFAULT_COACH_CSV = publicAsset('/GradingList.csv')
 const DEFAULT_COACH_PHOTO = publicAsset('/alonzo.jpg')
 const getTodayDateString = () => new Date().toLocaleDateString('en-GB')
 const DEFAULT_LAST_GRADING_DATE = '23/5/2025'
