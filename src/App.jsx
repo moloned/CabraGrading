@@ -19,7 +19,7 @@ const BELT_IMAGE = publicAsset('/belts/white.svg')
 const MASCOT_IMAGE = publicAsset('/clean/JudoMonkey-nobg.png')
 const SENIOR_MASCOT_IMAGE = publicAsset('/CabraGOATS.png')
 const DEFAULT_COACH_CSV = publicAsset('/CabraMembers.csv')
-const DEFAULT_COACH_PHOTO = publicAsset('/JudoMonkey.png')
+const DEFAULT_COACH_PHOTO = publicAsset('/alonzo.jpg')
 const getTodayDateString = () => new Date().toLocaleDateString('en-GB')
 const DEFAULT_LAST_GRADING_DATE = '23/5/2025'
 const DEFAULT_COACH_DETAILS = {
