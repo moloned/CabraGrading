@@ -1,10 +1,10 @@
-# Deploy to GitHub Pages
+# Deploy to GitHub Pages (GitHub Actions)
 
-This project is a client-side React + Vite app, so it can be deployed to GitHub Pages.
+This project is deployed with a GitHub Actions workflow in `.github/workflows/deploy-pages.yml`.
 
-## 1) Configure Vite base path
+## 1) Keep Vite base path set to repository name
 
-Update `vite.config.js` so the app resolves assets under your repository path:
+`vite.config.js` must point to the repo path so assets resolve on Pages:
 
 ```js
 import { defineConfig } from 'vite'
@@ -16,56 +16,42 @@ export default defineConfig({
 })
 ```
 
-If your repository name is different, replace `/CabraGrading/` with `/<your-repo-name>/`.
+If the repository name changes, update `base` to `/<your-repo-name>/`.
 
-## 2) Add deploy dependency
+## 2) One-time GitHub Pages setting
 
-Install `gh-pages` as a dev dependency:
-
-```bash
-npm install --save-dev gh-pages
-```
-
-## 3) Add deploy script
-
-In `package.json`, add this script:
-
-```json
-{
-  "scripts": {
-    "deploy": "npm run build && gh-pages -d dist"
-  }
-}
-```
-
-Keep your existing scripts and only add `deploy`.
-
-## 4) Deploy
-
-Run:
-
-```bash
-npm run deploy
-```
-
-This publishes the built `dist` folder to the `gh-pages` branch.
-
-## 5) Enable GitHub Pages
-
-In your GitHub repository:
+In the GitHub repository:
 
 1. Open Settings
 2. Open Pages
-3. Set Source to "Deploy from a branch"
-4. Select branch `gh-pages` and folder `/ (root)`
-5. Save
+3. Under Source, select `GitHub Actions`
+4. Save
 
-Your site URL will be:
+This is the only manual setup needed.
 
-`https://<your-username>.github.io/<your-repo-name>/`
+## 3) Deploy
+
+Every push to `main` now deploys automatically.
+
+You can also trigger deployment manually from:
+
+1. GitHub -> Actions
+2. Open `Deploy to GitHub Pages`
+3. Click `Run workflow`
 
 ## Notes
 
-- Because this app is static, no server is required.
-- Live syllabus fetching from the public Google Sheet gviz endpoint should continue to work on GitHub Pages.
-- After changing the app, run `npm run deploy` again to publish updates.
+- The workflow builds the app with `npm ci` and `npm run build`, then deploys `dist` via `actions/deploy-pages`.
+- No `gh-pages` branch configuration is required in repo settings when using the workflow.
+- Site URL format remains: `https://<your-username>.github.io/<your-repo-name>/`.
+
+## Root Landing Page (username.github.io)
+
+To control `https://moloned.github.io/` directly, use the separate repository named `moloned.github.io`.
+
+A ready-made landing page template is included in this repo:
+
+- `user-site-template/index.html`
+- `user-site-template/README.md`
+
+That template includes a link to `https://moloned.github.io/CabraGrading/`.

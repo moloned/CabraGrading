@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>moloned projects</title>
+    <style>
+      :root {
+        --bg: #f5f7fb;
+        --card: #ffffff;
+        --text: #16202a;
+        --muted: #4d5b6a;
+        --accent: #0f766e;
+        --accent-2: #115e59;
+        --ring: rgba(15, 118, 110, 0.22);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top right, #dff7f4, transparent 45%),
+          radial-gradient(circle at bottom left, #dce8ff, transparent 45%),
+          var(--bg);
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .card {
+        width: min(680px, 100%);
+        background: var(--card);
+        border: 1px solid #d7e3ef;
+        border-radius: 18px;
+        box-shadow: 0 14px 40px rgba(8, 15, 30, 0.08);
+        padding: 28px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(1.8rem, 2.6vw, 2.5rem);
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .projects {
+        margin-top: 22px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .project-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid #d7e3ef;
+        border-radius: 12px;
+        padding: 14px 16px;
+        background: #fbfdff;
+        transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+      }
+
+      .project-link:hover {
+        transform: translateY(-1px);
+        border-color: var(--accent);
+        box-shadow: 0 0 0 4px var(--ring);
+      }
+
+      .project-link strong {
+        color: var(--accent-2);
+        font-size: 1.05rem;
+      }
+
+      .project-link span {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      footer {
+        margin-top: 18px;
+        color: #6c7a88;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>moloned.github.io</h1>
+      <p>Project landing page.</p>
+
+      <section class="projects" aria-label="Project links">
+        <a class="project-link" href="https://moloned.github.io/CabraGrading/">
+          <strong>CabraGrading</strong>
+          <span>Judo grading workflow and exports</span>
+        </a>
+      </section>
+
+      <footer>Last updated: May 2026</footer>
+    </main>
+  </body>
+</html>
