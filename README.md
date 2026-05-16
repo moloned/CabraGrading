@@ -38,7 +38,6 @@ It supports:
 - npm run build: Create production build
 - npm run lint: Run ESLint
 - npm run preview: Preview built app
-- npm run generate:ija-forms: Generate IJA grading PDFs from membership CSV
 
 ## Data Inputs
 
@@ -105,12 +104,6 @@ A custom mascot image uploaded in the UI overrides both defaults.
 
 ## Utility Scripts
 
-### Generate IJA Forms
-
-	npm run generate:ija-forms
-
-Reads membership CSV data, maps each candidate's grade to the relevant IJA form template page, and writes output PDFs to `dist/ija-grading-forms`.
-
 ### Remove Image Backgrounds
 
 Script: `scripts/remove-bg.mjs`
@@ -125,7 +118,6 @@ Removes edge-connected background pixels from configured source images and write
 - public/clean/: Logo and image assets with transparent backgrounds
 - public/CabraMembers.csv: Default candidate list
 - public/CabraGOATS.png: Senior certificate mascot
-- scripts/generate-ija-grading-forms.mjs: IJA PDF generation
 - scripts/remove-bg.mjs: Background removal utility
 
 ## How the App Works

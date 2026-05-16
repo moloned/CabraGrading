@@ -11,14 +11,15 @@ import {
 import html2canvas from 'html2canvas'
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib'
 import './App.css'
-const CLUB_LOGO = '/clean/CabraLogo-nobg.png'
-const IJA_LOGO = '/clean/IJA-logo-nobg.png'
-const IJA_FORMS_PDF = '/IJAGradingforms.pdf'
-const BELT_IMAGE = '/belts/white.svg'
-const MASCOT_IMAGE = '/clean/JudoMonkey-nobg.png'
-const SENIOR_MASCOT_IMAGE = '/CabraGOATS.png'
-const DEFAULT_COACH_CSV = '/CabraMembers.csv'
-const DEFAULT_COACH_PHOTO = '/JudoMonkey.png'
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${String(path || '').replace(/^\/+/, '')}`
+
+const CLUB_LOGO = publicAsset('/clean/CabraLogo-nobg.png')
+const IJA_LOGO = publicAsset('/clean/IJA-logo-nobg.png')
+const BELT_IMAGE = publicAsset('/belts/white.svg')
+const MASCOT_IMAGE = publicAsset('/clean/JudoMonkey-nobg.png')
+const SENIOR_MASCOT_IMAGE = publicAsset('/CabraGOATS.png')
+const DEFAULT_COACH_CSV = publicAsset('/CabraMembers.csv')
+const DEFAULT_COACH_PHOTO = publicAsset('/JudoMonkey.png')
 const getTodayDateString = () => new Date().toLocaleDateString('en-GB')
 const DEFAULT_LAST_GRADING_DATE = '23/5/2025'
 const DEFAULT_COACH_DETAILS = {
@@ -29,24 +30,24 @@ const DEFAULT_COACH_DETAILS = {
 }
 
 const BELT_BY_GRADE = {
-  '1s': '/belts/red.svg',
-  '2s': '/belts/red.svg',
-  '3s': '/belts/red.svg',
-  '1m': '/belts/white.svg',
-  '2m': '/belts/red.svg',
-  '3m': '/belts/white-yellow.svg',
-  '4m': '/belts/yellow.svg',
-  '5m': '/belts/yellow-orange.svg',
-  '6m': '/belts/orange.svg',
-  '7m': '/belts/orange-green.svg',
-  '8m': '/belts/green.svg',
-  '9m': '/belts/green-blue.svg',
-  '10m': '/belts/blue.svg',
-  '11m': '/belts/blue-brown.svg',
-  '12m': '/belts/brown.svg',
-  '5k': '/belts/yellow.svg',
-  '4k': '/belts/orange.svg',
-  '3k': '/belts/green.svg'
+  '1s': publicAsset('/belts/red.svg'),
+  '2s': publicAsset('/belts/red.svg'),
+  '3s': publicAsset('/belts/red.svg'),
+  '1m': publicAsset('/belts/white.svg'),
+  '2m': publicAsset('/belts/red.svg'),
+  '3m': publicAsset('/belts/white-yellow.svg'),
+  '4m': publicAsset('/belts/yellow.svg'),
+  '5m': publicAsset('/belts/yellow-orange.svg'),
+  '6m': publicAsset('/belts/orange.svg'),
+  '7m': publicAsset('/belts/orange-green.svg'),
+  '8m': publicAsset('/belts/green.svg'),
+  '9m': publicAsset('/belts/green-blue.svg'),
+  '10m': publicAsset('/belts/blue.svg'),
+  '11m': publicAsset('/belts/blue-brown.svg'),
+  '12m': publicAsset('/belts/brown.svg'),
+  '5k': publicAsset('/belts/yellow.svg'),
+  '4k': publicAsset('/belts/orange.svg'),
+  '3k': publicAsset('/belts/green.svg')
 }
 
 const SENIOR_BELT_COLORS = {
@@ -84,26 +85,6 @@ const SHAMROCK_REPORT_ROWS = [
     generalBehaviour: ['Fair Play', 'Friendship']
   }
 ]
-
-const IJA_TEMPLATE_PAGE_BY_GRADE = {
-  '1s': 1,
-  '2s': 1,
-  '3s': 1,
-  '2m': 1,
-  '3m': 2,
-  '4m': 3,
-  '5m': 4,
-  '6m': 5,
-  '7m': 6,
-  '8m': 7,
-  '9m': 8,
-  '10m': 9,
-  '11m': 10,
-  '12m': 11,
-  '5k': 12,
-  '4k': 13,
-  '3k': 14
-}
 
 const MIN_MONTHS_IN_GRADE = {
   '1s': 1,
@@ -387,10 +368,6 @@ const WORKBOOK_PERFORMANCE_EXAMS = [
   }
 ]
 
-function buildPdfPageHref(page) {
-  return `${IJA_FORMS_PDF}#page=${page}`
-}
-
 function getWorkbookMonRank(gradeId) {
   return WORKBOOK_MON_ORDER.indexOf(gradeId)
 }
@@ -404,7 +381,7 @@ function buildWorkbookItems(items, gradeId) {
     .map((item) => ({
       label: item.label,
       description: item.description || (item.page ? `p${item.page}` : ''),
-      href: item.href || (item.page ? buildPdfPageHref(item.page) : '')
+      href: item.href || ''
     }))
 }
 
@@ -983,43 +960,6 @@ function getReadableTextColor(backgroundColor, dark = '#0f172a', light = '#fffff
   return luminance > 0.62 ? dark : light
 }
 
-function drawIjaEntryFields(page, font, data, options = {}) {
-  const black = rgb(0, 0, 0)
-  const nameX = 126
-  const licenceX = 410
-  const topDateLikeX = 620
-  const bottomDateLikeX = 620
-  const resultX = 900
-  const bottomRightX = 830
-
-  const yTop = options.yTop ?? 724
-  const yBottom = options.yBottom ?? 158
-  const bottomRightLabel = options.bottomRightLabel ?? 'club'
-  const bottomRightValue = bottomRightLabel === 'venue' ? data.venue : data.club
-
-  page.drawText(clipText(data.name, 42), { x: nameX, y: yTop, size: 11, font, color: black })
-  page.drawText(clipText(data.license, 28), { x: licenceX, y: yTop, size: 11, font, color: black })
-  page.drawText(clipText(data.timeInGrade || '', 28), { x: topDateLikeX, y: yTop, size: 11, font, color: black })
-  page.drawText(clipText(data.result || '', 34), { x: resultX, y: yTop, size: 11, font, color: black })
-
-  page.drawText(clipText(data.officerName || data.name, 42), { x: nameX, y: yBottom, size: 11, font, color: black })
-  page.drawText(clipText(data.officerLicense || '', 28), { x: licenceX, y: yBottom, size: 11, font, color: black })
-  page.drawText(clipText(data.date, 24), { x: bottomDateLikeX, y: yBottom, size: 11, font, color: black })
-  page.drawText(clipText(bottomRightValue, 38), { x: bottomRightX, y: yBottom, size: 11, font, color: black })
-}
-
-function getIjaPageStyle(templatePageIndex) {
-  if (templatePageIndex >= 16) {
-    return { yTop: 704, yBottom: 98, bottomRightLabel: 'venue' }
-  }
-
-  if (templatePageIndex >= 11) {
-    return { yTop: 753, yBottom: 132, bottomRightLabel: 'club' }
-  }
-
-  return { yTop: 724, yBottom: 112, bottomRightLabel: 'club' }
-}
-
 function App() {
   const certificateRef = useRef(null)
   const certificateReportRef = useRef(null)
@@ -1218,7 +1158,6 @@ function App() {
   const [selectedGradeId, setSelectedGradeId] = useState('1s')
   const [completedItems, setCompletedItems] = useState({})
   const [viewMode, setViewMode] = useState('coach')
-  const [inlinePreviewPage, setInlinePreviewPage] = useState('certificate')
   const [clubLogoUpload, setClubLogoUpload] = useState('')
   const [ijaLogoUpload, setIjaLogoUpload] = useState('')
   const [coachPhotoUpload, setCoachPhotoUpload] = useState(DEFAULT_COACH_PHOTO)
@@ -1234,7 +1173,6 @@ function App() {
   const [coachSelection, setCoachSelection] = useState({})
   const [gradingSessionRecordIds, setGradingSessionRecordIds] = useState([])
   const [gradingResults, setGradingResults] = useState({})
-  const [ijaTemplatePreviewUrl, setIjaTemplatePreviewUrl] = useState('')
   const [defaultCoachCsvLoaded, setDefaultCoachCsvLoaded] = useState(false)
   const [coachGroupFilter, setCoachGroupFilter] = useState('junior')
 
@@ -1986,78 +1924,6 @@ function App() {
     setCoachSelection({})
   }, [coachGroupFilter])
 
-  useEffect(() => {
-    let cancelled = false
-    let objectUrl = ''
-
-    const buildIjaTemplatePreview = async () => {
-      const templatePageNumber = IJA_TEMPLATE_PAGE_BY_GRADE[selectedGradeId]
-      if (!templatePageNumber) {
-        setIjaTemplatePreviewUrl('')
-        return
-      }
-
-      try {
-        const templateBytes = await fetch(IJA_FORMS_PDF).then((res) => {
-          if (!res.ok) throw new Error('IJA grading forms template was not found.')
-          return res.arrayBuffer()
-        })
-
-        const template = await PDFDocument.load(templateBytes)
-        const preview = await PDFDocument.create()
-        const templatePageIndex = templatePageNumber - 1
-        const [templatePage] = await preview.copyPages(template, [templatePageIndex])
-        preview.addPage(templatePage)
-
-        const font = await preview.embedFont(StandardFonts.Helvetica)
-        const pageStyle = getIjaPageStyle(templatePageIndex)
-
-        drawIjaEntryFields(templatePage, font, {
-          name: playerData.name,
-          license: playerData.licenseNumber,
-          officerName: playerData.coach,
-          officerLicense: playerData.gradingOfficerLicense,
-          date: playerData.gradingDate,
-          club: playerData.club,
-          venue: playerData.club,
-          timeInGrade: timeInGradeDisplay,
-          result: activeGradingResult
-        }, pageStyle)
-
-        const previewBytes = await preview.save()
-        objectUrl = URL.createObjectURL(new Blob([previewBytes], { type: 'application/pdf' }))
-
-        if (!cancelled) {
-          setIjaTemplatePreviewUrl(objectUrl)
-        } else if (objectUrl) {
-          URL.revokeObjectURL(objectUrl)
-        }
-      } catch {
-        if (!cancelled) {
-          setIjaTemplatePreviewUrl('')
-        }
-      }
-    }
-
-    buildIjaTemplatePreview()
-
-    return () => {
-      cancelled = true
-      if (objectUrl) {
-        URL.revokeObjectURL(objectUrl)
-      }
-    }
-  }, [
-    selectedGradeId,
-    playerData.name,
-    playerData.licenseNumber,
-    playerData.gradingOfficerLicense,
-    playerData.gradingDate,
-    playerData.club,
-    playerData.lastCoachingDate,
-    activeGradingResult
-  ])
-
   const downloadCertificate = async (resultOverride = activeGradingResult) => {
     if (!certificateRef.current) return
 
@@ -2133,54 +1999,24 @@ function App() {
       }
     }
 
-    const templatePageNumber = IJA_TEMPLATE_PAGE_BY_GRADE[selectedGradeId]
-    if (templatePageNumber) {
-      try {
-        const templateBytes = await fetch(IJA_FORMS_PDF).then((res) => {
-          if (!res.ok) throw new Error('IJA grading forms template was not found.')
-          return res.arrayBuffer()
-        })
-
-        const template = await PDFDocument.load(templateBytes)
-        const templatePageIndex = templatePageNumber - 1
-        const [templatePage] = await out.copyPages(template, [templatePageIndex])
-        out.addPage(templatePage)
-
-        const font = await out.embedFont(StandardFonts.Helvetica)
-        const pageStyle = getIjaPageStyle(templatePageIndex)
-
-        drawIjaEntryFields(templatePage, font, {
-          name: playerData.name,
-          license: playerData.licenseNumber,
-          officerName: playerData.coach,
-          officerLicense: playerData.gradingOfficerLicense,
-          date: playerData.gradingDate,
-          club: playerData.club,
-          venue: playerData.club,
-          timeInGrade: timeInGradeDisplay,
-          result: resultOverride
-        }, pageStyle)
-      } catch {
-        if (certificateReportRef.current) {
-          const fallbackCanvas = await html2canvas(certificateReportRef.current, {
-            scale: 2,
-            useCORS: true,
-            backgroundColor: '#f4f5f4'
-          })
-          const fallbackPage = out.addPage([841.89, 595.28])
-          const fallbackImage = await out.embedPng(dataUrlToUint8Array(fallbackCanvas.toDataURL('image/png')))
-          const fallbackDims = fallbackImage.scale(1)
-          const fallbackScale = Math.min(fallbackPage.getWidth() / fallbackDims.width, fallbackPage.getHeight() / fallbackDims.height)
-          const fallbackWidth = fallbackDims.width * fallbackScale
-          const fallbackHeight = fallbackDims.height * fallbackScale
-          fallbackPage.drawImage(fallbackImage, {
-            x: (fallbackPage.getWidth() - fallbackWidth) / 2,
-            y: (fallbackPage.getHeight() - fallbackHeight) / 2,
-            width: fallbackWidth,
-            height: fallbackHeight
-          })
-        }
-      }
+    if (certificateReportRef.current) {
+      const reportCanvas = await html2canvas(certificateReportRef.current, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: '#f4f5f4'
+      })
+      const reportPage = out.addPage([841.89, 595.28])
+      const reportImage = await out.embedPng(dataUrlToUint8Array(reportCanvas.toDataURL('image/png')))
+      const reportDims = reportImage.scale(1)
+      const reportScale = Math.min(reportPage.getWidth() / reportDims.width, reportPage.getHeight() / reportDims.height)
+      const reportWidth = reportDims.width * reportScale
+      const reportHeight = reportDims.height * reportScale
+      reportPage.drawImage(reportImage, {
+        x: (reportPage.getWidth() - reportWidth) / 2,
+        y: (reportPage.getHeight() - reportHeight) / 2,
+        width: reportWidth,
+        height: reportHeight
+      })
     }
 
     const bytes = await out.save()
@@ -2370,8 +2206,6 @@ function App() {
       <div
         className={`certificate ${inlinePreview ? 'inline-preview-surface' : ''}`}
         ref={certificateRef}
-        onClick={inlinePreview ? () => setInlinePreviewPage('report') : undefined}
-        style={inlinePreview && inlinePreviewPage !== 'certificate' ? { display: 'none' } : undefined}
       >
         <div className="frame top-horizontal" />
         <div className="frame top-vertical" />
@@ -2455,28 +2289,13 @@ function App() {
         </div>
       </div>
 
-      {ijaTemplatePreviewUrl ? (
-        <div
-          className={`certificate report-page report-page-template ${inlinePreview ? 'inline-preview-surface' : ''}`}
-          onClick={inlinePreview ? () => setInlinePreviewPage('certificate') : undefined}
-          style={inlinePreview && inlinePreviewPage !== 'report' ? { display: 'none' } : undefined}
-        >
-          <iframe
-            src={ijaTemplatePreviewUrl}
-            title="IJA grading form preview"
-            className="report-template-frame"
-          />
-        </div>
-      ) : (
-        <div
-          className={`certificate report-page ${inlinePreview ? 'inline-preview-surface' : ''}`}
-          ref={certificateReportRef}
-          onClick={inlinePreview ? () => setInlinePreviewPage('certificate') : undefined}
-          style={{
-            borderTop: `4px solid ${reportTheme.pageAccent}`,
-            ...(inlinePreview && inlinePreviewPage !== 'report' ? { display: 'none' } : {})
-          }}
-        >
+      <div
+        className={`certificate report-page ${inlinePreview ? 'inline-preview-surface' : ''}`}
+        ref={certificateReportRef}
+        style={{
+          borderTop: `4px solid ${reportTheme.pageAccent}`
+        }}
+      >
         <div className="report-header">
           <div>
             <h3>Irish Judo - Grading Forms</h3>
@@ -2629,7 +2448,6 @@ function App() {
           </div>
         </div>
       </div>
-      )}
     </div>
   )
 
