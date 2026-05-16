@@ -2518,7 +2518,7 @@ function App() {
               <div className="report-column">
                 {activeReportRow.ukemi.map((item) => (
                   <label key={getExamItemId('Ukemi', item)} className="report-check-item">
-                    <span className={`report-box ${isRequirementChecked(label) ? 'checked' : ''}`}>
+                    <span className={`report-box ${isRequirementChecked(getExamItemId('Ukemi', item)) ? 'checked' : ''}`}>
                       {isRequirementChecked(getExamItemId('Ukemi', item)) ? 'x' : ''}
                     </span>
                     <span>{renderExamText(item)}</span>
