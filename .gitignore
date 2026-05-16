@@ -27,6 +27,9 @@ dist-ssr
 *.csv
 *.csv:Zone.Identifier
 
+# Except for default example grading list
+!public/GradingList.csv
+
 # Personal files
 alonzo.jpg
 david.jpg
