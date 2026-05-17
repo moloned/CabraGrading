@@ -2637,7 +2637,9 @@ function App() {
               Senior ({coachGroupCounts.senior})
             </button>
           </div>
+        </div>
 
+        <div className="coach-candidates-footer">
           <div className="coach-export-actions" role="group" aria-label="Export grading session records">
             <button
               type="button"
