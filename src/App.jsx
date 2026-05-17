@@ -20,15 +20,16 @@ const BELT_IMAGE = publicAsset('/belts/white.svg')
 const MASCOT_IMAGE = publicAsset('/clean/JudoMonkey-nobg.png')
 const SENIOR_MASCOT_IMAGE = publicAsset('/CabraGOATS.png')
 const DEFAULT_COACH_CSV = publicAsset('/GradingList.csv')
-const DEFAULT_COACH_PHOTO = publicAsset('/alonzo.jpg')
+const DEFAULT_COACH_PHOTO = publicAsset('/coach-placeholder.svg')
 const getTodayDateString = () => new Date().toLocaleDateString('en-GB')
 const DEFAULT_LAST_GRADING_DATE = '23/5/2025'
 const DEFAULT_COACH_DETAILS = {
-  name: 'Alonzo Henderson',
-  title: '6th Dan OLY',
-  licenseNumber: '17-0622',
+  name: 'Club Coach',
+  title: 'IJA Grading Coach',
+  licenseNumber: '00-0000',
   club: 'Cabra Judo Club'
 }
+const DEFAULT_COACH_LABEL = [DEFAULT_COACH_DETAILS.name, DEFAULT_COACH_DETAILS.title].filter(Boolean).join(' - ')
 
 const BELT_BY_GRADE = {
   '1s': publicAsset('/belts/red.svg'),
@@ -1151,7 +1152,7 @@ function App() {
     licenseNumber: '',
     lastCoachingDate: DEFAULT_LAST_GRADING_DATE,
     club: 'Cabra Judo Club',
-    coach: 'Alonzo Henderson 6th Dan OLY',
+    coach: DEFAULT_COACH_LABEL,
     gradingOfficerLicense: DEFAULT_COACH_DETAILS.licenseNumber,
     gradingDate: getTodayDateString()
   })
@@ -2062,7 +2063,7 @@ function App() {
       licenseNumber: '',
       lastCoachingDate: DEFAULT_LAST_GRADING_DATE,
       club: 'Cabra Judo Club',
-      coach: 'Alonzo Henderson 6th Dan OLY',
+      coach: DEFAULT_COACH_LABEL,
       gradingOfficerLicense: DEFAULT_COACH_DETAILS.licenseNumber,
       gradingDate: getTodayDateString()
     })
@@ -2640,6 +2641,10 @@ function App() {
         </div>
 
         <div className="coach-candidates-footer">
+          <button className="btn btn-primary coach-start" onClick={startCoachGrading}>
+            <Zap size={18} /> Start {coachGroupFilter === 'senior' ? 'Senior' : 'Junior'} Grading ({selectedCoachCount})
+          </button>
+
           <div className="coach-export-actions" role="group" aria-label="Export grading session records">
             <button
               type="button"
@@ -2657,11 +2662,14 @@ function App() {
             >
               Export Session PDF
             </button>
+            <button
+              type="button"
+              className="btn btn-dark"
+              onClick={downloadGradingList}
+            >
+              <Download size={16} /> Grading List
+            </button>
           </div>
-
-          <button className="btn btn-primary coach-start" onClick={startCoachGrading}>
-            <Zap size={18} /> Start {coachGroupFilter === 'senior' ? 'Senior' : 'Junior'} Grading ({selectedCoachCount})
-          </button>
         </div>
       </section>
     </div>
