@@ -7,6 +7,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Zap,
+  Download,
 } from 'lucide-react'
 import html2canvas from 'html2canvas'
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib'
@@ -1673,6 +1674,29 @@ function App() {
     return text
   }
 
+  const downloadGradingList = async () => {
+    try {
+      const response = await fetch(publicAsset('/GradingList.csv'))
+      if (!response.ok) {
+        setGradingListMessage('Could not download grading list.')
+        return
+      }
+      
+      const blob = await response.blob()
+      const url = URL.createObjectURL(blob)
+      const anchor = document.createElement('a')
+      anchor.href = url
+      anchor.download = 'GradingList.csv'
+      document.body.appendChild(anchor)
+      anchor.click()
+      anchor.remove()
+      URL.revokeObjectURL(url)
+      setGradingListMessage('Downloaded GradingList.csv for local editing.')
+    } catch (error) {
+      setGradingListMessage('Error downloading grading list.')
+    }
+  }
+
   const downloadSessionCsv = () => {
     const rows = getSessionExportRows()
     if (rows.length === 0) {
@@ -2459,7 +2483,18 @@ function App() {
         </div>
 
         <label>Grading List (CSV/JSON)</label>
-        <input type="file" accept=".csv,.json,application/json,text/csv" onChange={onGradingListUpload} />
+        <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
+          <input type="file" accept=".csv,.json,application/json,text/csv" onChange={onGradingListUpload} style={{ flex: 1 }} />
+          <button
+            type="button"
+            className="btn btn-dark"
+            onClick={downloadGradingList}
+            title="Download current grading list for local editing"
+            style={{ marginTop: '0px', whiteSpace: 'nowrap' }}
+          >
+            <Download size={16} /> Download
+          </button>
+        </div>
         {gradingListMessage ? <p className="upload-note">{gradingListMessage}</p> : null}
 
         <label>Club Logo (optional upload)</label>
