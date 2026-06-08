@@ -44,7 +44,7 @@ function StudyGuidePage() {
     <div className="sg-page">
       <header className="sg-hero">
         <p className="sg-kicker">Cabra Judo Club</p>
-        <h1>Mon Study Guide</h1>
+        <h1>Kids Mon Study Guide</h1>
         <div className="sg-hero-links">
           <div className="sg-koka-card">
             <a href={kodomoNoKataUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open Kodomo no Kata video">
@@ -61,9 +61,6 @@ function StudyGuidePage() {
               <img src={kokaKidsCover} alt="Koka Kids PDF cover" className="sg-koka-thumb" loading="lazy" />
             </a>
             <div className="sg-koka-actions">
-              <a href={kodomoNoKataUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
-                Watch Kodomo no Kata
-              </a>
               <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
                 Open Koka Kids PDF
               </a>

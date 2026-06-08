@@ -101,8 +101,9 @@ body {
 .sg-hero-links {
   margin-top: 0.8rem;
   display: grid;
-  gap: 0.9rem;
-  justify-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(190px, max-content));
+  gap: 1rem 1.2rem;
+  align-items: start;
 }
 
 .sg-koka-actions {
