@@ -16,6 +16,24 @@ const CATEGORY_LABELS = {
   terminology: 'Terminology'
 }
 
+const KYU_BELT_COLORS = {
+  '5k': ['#facc15'],
+  '4k': ['#f97316'],
+  '3k': ['#10b981'],
+  '2k': ['#2563eb'],
+  '1k': ['#78350f']
+}
+
+function getKyuBaseId(gradeId) {
+  const value = String(gradeId || '').toLowerCase()
+  if (value.startsWith('5k')) return '5k'
+  if (value.startsWith('4k')) return '4k'
+  if (value.startsWith('3k')) return '3k'
+  if (value.startsWith('2k')) return '2k'
+  if (value.startsWith('1k')) return '1k'
+  return ''
+}
+
 function KyuStudyGuidePage() {
   const syllabusPdfUrl = 'https://irishjudoassociation.ie/wp-content/uploads/2024/02/IJA-Grading-Syllabus-V8-2024-16.01.2024.pdf'
   const syllabusCover = publicAsset('/ija-grading-info-cover.png')
@@ -25,11 +43,6 @@ function KyuStudyGuidePage() {
       <header className="sg-hero">
         <p className="sg-kicker">Cabra Judo Club</p>
         <h1>Adult Kyu Study Guide</h1>
-        <p>
-          Based on the IJA PDF syllabus for adult Kyu grades ({' '}
-          <a href={data.source} target="_blank" rel="noreferrer">source PDF</a> ) with EfficientJudo links where relevant.
-        </p>
-        <p>IJA Grading Information 2024 PDF resource:</p>
         <div className="sg-koka-card">
           <a href={syllabusPdfUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open IJA Grading Information 2024 PDF">
             <img src={syllabusCover} alt="IJA Grading Information 2024 cover" className="sg-koka-thumb" loading="lazy" />
@@ -44,7 +57,18 @@ function KyuStudyGuidePage() {
         {data.grades.map((grade) => (
           <section className="sg-grade" key={grade.gradeId}>
             <div className="sg-grade-head">
-              <h2>{grade.gradeName}</h2>
+              <div className="sg-grade-title-row">
+                <h2>{grade.gradeName}</h2>
+                <div className="sg-belt-swatches" aria-label={`${grade.gradeName} belt colors`}>
+                  {(KYU_BELT_COLORS[getKyuBaseId(grade.gradeId)] || []).map((color, idx) => (
+                    <span
+                      key={`${grade.gradeId}-belt-${idx}`}
+                      className="sg-belt-swatch"
+                      style={{ backgroundColor: color }}
+                    />
+                  ))}
+                </div>
+              </div>
               <span>{grade.pathway}</span>
             </div>
 

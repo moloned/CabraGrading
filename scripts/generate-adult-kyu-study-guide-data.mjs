@@ -5,6 +5,7 @@ const ROOT = process.cwd()
 const OUTPUT_JSON = path.resolve(ROOT, 'src/data/adultKyuStudyGuideData.json')
 const SOURCE_PDF_URL = 'https://irishjudoassociation.ie/wp-content/uploads/2024/02/IJA-Grading-Syllabus-V8-2024-16.01.2024.pdf'
 const CHANNEL_URL = 'https://www.youtube.com/@EfficientJudo'
+const FALLBACK_CHANNEL_URL = 'https://www.youtube.com/@KODOKANJUDO'
 
 const ADULT_KYU_GRADES = [
   {
@@ -136,18 +137,22 @@ async function resolveYoutubeVideoUrl(name, cache) {
   if (!key) return ''
   if (cache.has(key)) return cache.get(key)
 
-  const searchUrl = `${CHANNEL_URL}/search?query=${encodeURIComponent(name)}`
-
-  try {
+  const findFromChannel = async (channelUrl) => {
+    const searchUrl = `${channelUrl}/search?query=${encodeURIComponent(name)}`
     const response = await fetch(searchUrl)
-    if (!response.ok) {
-      cache.set(key, '')
-      return ''
-    }
+    if (!response.ok) return ''
 
     const html = await response.text()
     const idMatch = html.match(/\"videoId\":\"([a-zA-Z0-9_-]{11})\"/)
-    const resolved = idMatch ? `https://www.youtube.com/watch?v=${idMatch[1]}` : ''
+    return idMatch ? `https://www.youtube.com/watch?v=${idMatch[1]}` : ''
+  }
+
+  try {
+    let resolved = await findFromChannel(CHANNEL_URL)
+    if (!resolved) {
+      resolved = await findFromChannel(FALLBACK_CHANNEL_URL)
+    }
+
     cache.set(key, resolved)
     return resolved
   } catch {

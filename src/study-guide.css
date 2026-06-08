@@ -133,6 +133,27 @@ body {
   font-size: 1.35rem;
 }
 
+.sg-grade-title-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.sg-belt-swatches {
+  display: inline-flex;
+  gap: 0.28rem;
+  align-items: center;
+}
+
+.sg-belt-swatch {
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 999px;
+  border: 1px solid #334155;
+  display: inline-block;
+}
+
 .sg-grade-head span {
   font-size: 0.78rem;
   font-weight: 800;

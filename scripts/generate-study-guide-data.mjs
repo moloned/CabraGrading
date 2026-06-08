@@ -6,6 +6,25 @@ const ROOT = process.cwd()
 const INPUT_XLSX = path.resolve(ROOT, 'IJA_Grading_Syllabus.xlsx')
 const OUTPUT_JSON = path.resolve(ROOT, 'src/data/studyGuideData.json')
 const CHANNEL_URL = 'https://www.youtube.com/@EfficientJudo'
+const FALLBACK_CHANNEL_URL = 'https://www.youtube.com/@KODOKANJUDO'
+const VIDEO_OVERRIDES = {
+  'makura kesa gatame': 'https://www.youtube.com/watch?v=e5HrhANfDcU&pp=ygUabWFrdXJhIGtlc2EgZ2F0YW1lIGtvZG9rYW4%3D',
+  'mukura kesa gatame': 'https://www.youtube.com/watch?v=e5HrhANfDcU&pp=ygUabWFrdXJhIGtlc2EgZ2F0YW1lIGtvZG9rYW4%3D'
+}
+const MON_KODOKAN_CHAPTER_OVERRIDES = {
+  'mae mawari ukemi': 'https://www.youtube.com/watch?v=-wZKFsubC04&t=52s',
+  'de ashi barai': 'https://www.youtube.com/watch?v=2-5at8cWc0E&t=171s',
+  'uki goshi': 'https://www.youtube.com/watch?v=2-5at8cWc0E&t=213s',
+  'harai goshi': 'https://www.youtube.com/watch?v=-wZKFsubC04&t=116s',
+  'ippon seoi nage': 'https://www.youtube.com/watch?v=-wZKFsubC04&t=175s',
+  'uchi mata': 'https://www.youtube.com/watch?v=-wZKFsubC04&t=72s',
+  'ushiro kesa gatame': 'https://www.youtube.com/watch?v=-wZKFsubC04&t=195s',
+  'yoko shiho gatame': 'https://www.youtube.com/watch?v=-wZKFsubC04&t=199s',
+  'kami shiho gatame': 'https://www.youtube.com/watch?v=-wZKFsubC04&t=203s',
+  'ritsurei': 'https://www.youtube.com/watch?v=2-5at8cWc0E&t=25s',
+  'za rei': 'https://www.youtube.com/watch?v=2-5at8cWc0E&t=35s',
+  'zarei': 'https://www.youtube.com/watch?v=2-5at8cWc0E&t=35s'
+}
 
 const SHEET_META = {
   Shamrock1: { gradeId: '1s', gradeName: '1st Shamrock' },
@@ -98,27 +117,46 @@ function extractYoutubeVideoId(url) {
   return match ? match[1] : ''
 }
 
-async function resolveYoutubeVideoUrl(name, cache) {
+async function resolveYoutubeVideoUrl(name, cache, options = {}) {
   const key = normalizeLookupName(name)
   if (!key || isNonVideoTerm(key)) return ''
-  if (cache.has(key)) return cache.get(key)
 
-  const searchUrl = `${CHANNEL_URL}/search?query=${encodeURIComponent(name)}`
+  if (VIDEO_OVERRIDES[key]) {
+    return VIDEO_OVERRIDES[key]
+  }
 
-  try {
+  if (options.preferKodokan && MON_KODOKAN_CHAPTER_OVERRIDES[key]) {
+    return MON_KODOKAN_CHAPTER_OVERRIDES[key]
+  }
+
+  const cacheKey = `${options.preferKodokan ? 'kodokan-first' : 'efficient-first'}:${key}`
+  if (cache.has(cacheKey)) return cache.get(cacheKey)
+
+  const findFromChannel = async (channelUrl) => {
+    const searchUrl = `${channelUrl}/search?query=${encodeURIComponent(name)}`
     const response = await fetch(searchUrl)
-    if (!response.ok) {
-      cache.set(key, '')
-      return ''
-    }
+    if (!response.ok) return ''
 
     const html = await response.text()
     const idMatch = html.match(/\"videoId\":\"([a-zA-Z0-9_-]{11})\"/)
-    const resolved = idMatch ? `https://www.youtube.com/watch?v=${idMatch[1]}` : ''
-    cache.set(key, resolved)
+    return idMatch ? `https://www.youtube.com/watch?v=${idMatch[1]}` : ''
+  }
+
+  try {
+    const channelOrder = options.preferKodokan
+      ? [FALLBACK_CHANNEL_URL]
+      : [CHANNEL_URL, FALLBACK_CHANNEL_URL]
+
+    let resolved = ''
+    for (const channelUrl of channelOrder) {
+      resolved = await findFromChannel(channelUrl)
+      if (resolved) break
+    }
+
+    cache.set(cacheKey, resolved)
     return resolved
   } catch {
-    cache.set(key, '')
+    cache.set(cacheKey, '')
     return ''
   }
 }
@@ -158,15 +196,19 @@ async function attachVideoLinks(grades) {
   const cache = new Map()
 
   for (const grade of grades) {
+    const preferKodokan = String(grade.gradeId || '').endsWith('m')
+
     for (const items of Object.values(grade.categories)) {
       for (const item of items) {
-        const sourceId = extractYoutubeVideoId(item.sourceUrl)
-        if (sourceId) {
-          item.youtubeUrl = `https://www.youtube.com/watch?v=${sourceId}`
-          continue
+        if (!preferKodokan) {
+          const sourceId = extractYoutubeVideoId(item.sourceUrl)
+          if (sourceId) {
+            item.youtubeUrl = `https://www.youtube.com/watch?v=${sourceId}`
+            continue
+          }
         }
 
-        item.youtubeUrl = await resolveYoutubeVideoUrl(item.name, cache)
+        item.youtubeUrl = await resolveYoutubeVideoUrl(item.name, cache, { preferKodokan })
       }
     }
   }

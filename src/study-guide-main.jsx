@@ -17,6 +17,23 @@ const CATEGORY_LABELS = {
   additionalLearning: 'Additional Learning'
 }
 
+const MON_BELT_COLORS = {
+  '1s': ['#dc2626'],
+  '2s': ['#dc2626'],
+  '3s': ['#dc2626'],
+  '2m': ['#dc2626'],
+  '3m': ['#ffffff', '#facc15'],
+  '4m': ['#facc15'],
+  '5m': ['#facc15', '#f97316'],
+  '6m': ['#f97316'],
+  '7m': ['#f97316', '#10b981'],
+  '8m': ['#10b981'],
+  '9m': ['#10b981', '#2563eb'],
+  '10m': ['#2563eb'],
+  '11m': ['#2563eb', '#78350f'],
+  '12m': ['#78350f']
+}
+
 function StudyGuidePage() {
   const kokaKidsUrl = 'https://indd.adobe.com/view/ad37a511-225a-41c1-8d3c-0ac13b2ec723'
   const kokaKidsCover = publicAsset('/koka-kids-cover.png')
@@ -25,15 +42,7 @@ function StudyGuidePage() {
     <div className="sg-page">
       <header className="sg-hero">
         <p className="sg-kicker">Cabra Judo Club</p>
-        <h1>IJA Grading Study Guide</h1>
-        <p>
-          Built from <strong>{data.source}</strong> with links to the{' '}
-          <a href={data.channelUrl} target="_blank" rel="noreferrer">EfficientJudo channel</a> for every listed item.
-        </p>
-        <p>
-          Koka Kids PDF:{' '}
-          Learn through the illustrated handbook.
-        </p>
+        <h1>Mon Study Guide</h1>
         <div className="sg-koka-card">
           <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open Koka Kids PDF">
             <img src={kokaKidsCover} alt="Koka Kids PDF cover" className="sg-koka-thumb" loading="lazy" />
@@ -48,7 +57,18 @@ function StudyGuidePage() {
         {data.grades.map((grade) => (
           <section className="sg-grade" key={grade.gradeId}>
             <div className="sg-grade-head">
-              <h2>{grade.gradeName}</h2>
+              <div className="sg-grade-title-row">
+                <h2>{grade.gradeName}</h2>
+                <div className="sg-belt-swatches" aria-label={`${grade.gradeName} belt colors`}>
+                  {(MON_BELT_COLORS[grade.gradeId] || []).map((color, idx) => (
+                    <span
+                      key={`${grade.gradeId}-belt-${idx}`}
+                      className="sg-belt-swatch"
+                      style={{ backgroundColor: color }}
+                    />
+                  ))}
+                </div>
+              </div>
               <span>{grade.gradeId.toUpperCase()}</span>
             </div>
 

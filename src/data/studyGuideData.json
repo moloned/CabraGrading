@@ -1,6 +1,6 @@
 {
   "source": "IJA_Grading_Syllabus.xlsx",
-  "generatedAt": "2026-06-08T10:50:44.644Z",
+  "generatedAt": "2026-06-08T12:45:32.950Z",
   "channelUrl": "https://www.youtube.com/@EfficientJudo",
   "grades": [
     {
@@ -67,7 +67,7 @@
           {
             "name": "agura & seiza",
             "sourceUrl": "",
-            "youtubeUrl": ""
+            "youtubeUrl": "https://www.youtube.com/watch?v=BBZG9N4cW0U"
           }
         ],
         "generalBehaviour": [
@@ -162,7 +162,7 @@
           {
             "name": "ritsurei",
             "sourceUrl": "",
-            "youtubeUrl": ""
+            "youtubeUrl": "https://www.youtube.com/watch?v=BBZG9N4cW0U"
           },
           {
             "name": "za rei",
@@ -286,7 +286,7 @@
           {
             "name": "tori (attacker)",
             "sourceUrl": "",
-            "youtubeUrl": ""
+            "youtubeUrl": "https://www.youtube.com/watch?v=ZbjWCm53Osg"
           },
           {
             "name": "dojo (judo hall)",
@@ -324,49 +324,49 @@
           {
             "name": "de ashi barai",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=gW9LEvVmG2o"
+            "youtubeUrl": "https://www.youtube.com/watch?v=2-5at8cWc0E&t=171s"
           },
           {
             "name": "Uki-goshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=5jVF6r366Kg"
+            "youtubeUrl": "https://www.youtube.com/watch?v=2-5at8cWc0E&t=213s"
           },
           {
             "name": "Osoto-gari",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=KeIPk8O58zs"
+            "youtubeUrl": "https://www.youtube.com/watch?v=c-A_nP7mKAc"
           }
         ],
         "newaza": [
           {
             "name": "Kesa-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=3UnJa3bn0h8"
+            "youtubeUrl": "https://www.youtube.com/watch?v=NDaQuJOFBYk"
           },
           {
             "name": "kuzure kesa-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=GcAh8oFd1PI"
+            "youtubeUrl": "https://www.youtube.com/watch?v=Q2fb9jaoUFQ"
           },
           {
             "name": "Kata-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+            "youtubeUrl": "https://www.youtube.com/watch?v=zQR3IOXxO_Q"
           },
           {
             "name": "Tate-shiho-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=XjWzNxlKH1M"
+            "youtubeUrl": "https://www.youtube.com/watch?v=55-rFmBx53g"
           },
           {
             "name": "mune gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=lIt5vywPBF0"
+            "youtubeUrl": "https://www.youtube.com/watch?v=zQR3IOXxO_Q"
           },
           {
             "name": "kuzure tate-shiho-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=Sx7bgjx3O8Y"
+            "youtubeUrl": "https://www.youtube.com/watch?v=YUrogQWdwiY"
           }
         ],
         "freePractice": [
@@ -392,17 +392,17 @@
           {
             "name": "seiza",
             "sourceUrl": "",
-            "youtubeUrl": ""
+            "youtubeUrl": "https://www.youtube.com/watch?v=BBZG9N4cW0U"
           },
           {
             "name": "ritsurei",
             "sourceUrl": "",
-            "youtubeUrl": ""
+            "youtubeUrl": "https://www.youtube.com/watch?v=2-5at8cWc0E&t=25s"
           },
           {
             "name": "za rei",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=veM5RFdjo0U"
+            "youtubeUrl": "https://www.youtube.com/watch?v=2-5at8cWc0E&t=35s"
           },
           {
             "name": "bow onto mat",
@@ -429,7 +429,7 @@
           {
             "name": "safety",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=i_yvO3ICpgs"
+            "youtubeUrl": "https://www.youtube.com/watch?v=OR-HGHnarYc"
           },
           {
             "name": "fair play",
@@ -439,14 +439,14 @@
           {
             "name": "friendship",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=r1zGVN_S0IU"
+            "youtubeUrl": ""
           }
         ],
         "terminology": [
           {
             "name": "rei (bow)",
             "sourceUrl": "",
-            "youtubeUrl": ""
+            "youtubeUrl": "https://www.youtube.com/watch?v=BBZG9N4cW0U"
           },
           {
             "name": "hajime (begin)",
@@ -461,17 +461,17 @@
           {
             "name": "ukemi (breakfall)",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=JCwK1Ia4jsc"
+            "youtubeUrl": "https://www.youtube.com/watch?v=VoktcQAxEPg"
           },
           {
             "name": "judoka (judo player)",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=zsxl52ciw1Q"
+            "youtubeUrl": "https://www.youtube.com/watch?v=_GxcFx8LZRk"
           },
           {
             "name": "sensei (coach)",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=Mwz5At87OxE"
+            "youtubeUrl": ""
           },
           {
             "name": "uke (receiver)",
@@ -481,12 +481,12 @@
           {
             "name": "tori (attacker)",
             "sourceUrl": "",
-            "youtubeUrl": ""
+            "youtubeUrl": "https://www.youtube.com/watch?v=ZbjWCm53Osg"
           },
           {
             "name": "dojo (judo hall)",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=sqQ4tr3iERE"
+            "youtubeUrl": "https://www.youtube.com/watch?v=cHeIs-fSqwE"
           },
           {
             "name": "tatami (judo mat)",
@@ -519,24 +519,24 @@
           {
             "name": "O-uchi-gari",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=I3BWf1ZoIuc"
+            "youtubeUrl": "https://www.youtube.com/watch?v=0itJFhV9pDQ"
           },
           {
             "name": "hiza guruma",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=a1RZvytW3OI"
+            "youtubeUrl": "https://www.youtube.com/watch?v=JPJx9-oAVns"
           },
           {
             "name": "sasae tsurikomi ashi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=MiGljHOokvE"
+            "youtubeUrl": "https://www.youtube.com/watch?v=699i--pvYmE"
           }
         ],
         "newaza": [
           {
             "name": "Yoko-shiho-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=1GJn6OEyuO4"
+            "youtubeUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=199s"
           }
         ],
         "freePractice": [
@@ -579,19 +579,19 @@
           {
             "name": "tie your belt",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=-CZO8Mj5cA8"
+            "youtubeUrl": "https://www.youtube.com/watch?v=XQHhDxi4-eg"
           }
         ],
         "terminology": [
           {
             "name": "judogi (judo suit)",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=gW9LEvVmG2o"
+            "youtubeUrl": "https://www.youtube.com/watch?v=XQHhDxi4-eg"
           },
           {
             "name": "obi (belt)",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=3dGTN6sGbmk"
+            "youtubeUrl": "https://www.youtube.com/watch?v=ff8U2TVZIYI"
           },
           {
             "name": "zori (sandals/crocs)",
@@ -603,12 +603,12 @@
           {
             "name": "o-uchi-gaeshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=V5jQkLDww7g"
+            "youtubeUrl": "https://www.youtube.com/watch?v=dCyZTXyjIXE"
           },
           {
             "name": "tsubame-gaeshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+            "youtubeUrl": "https://www.youtube.com/watch?v=GwweWqqFB5g"
           }
         ]
       }
@@ -629,24 +629,24 @@
           {
             "name": "morote seoi nage",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=eWEW9SfI5xg"
+            "youtubeUrl": "https://www.youtube.com/watch?v=zIq0xI0ogxk"
           },
           {
             "name": "O-goshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=VLYKx-Fwhxg"
+            "youtubeUrl": "https://www.youtube.com/watch?v=yhu1mfy2vJ4"
           },
           {
             "name": "Ippon Seoi-nage",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=OmKfUXAAdZ0"
+            "youtubeUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=175s"
           }
         ],
         "newaza": [
           {
             "name": "Yoko-shiho-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=1GJn6OEyuO4"
+            "youtubeUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=199s"
           }
         ],
         "freePractice": [
@@ -689,19 +689,19 @@
           {
             "name": "courtesy",
             "sourceUrl": "",
-            "youtubeUrl": ""
+            "youtubeUrl": "https://www.youtube.com/watch?v=-wZKFsubC04"
           }
         ],
         "terminology": [
           {
             "name": "judogi (judo suit)",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=gW9LEvVmG2o"
+            "youtubeUrl": "https://www.youtube.com/watch?v=XQHhDxi4-eg"
           },
           {
             "name": "obi (belt)",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=3dGTN6sGbmk"
+            "youtubeUrl": "https://www.youtube.com/watch?v=ff8U2TVZIYI"
           },
           {
             "name": "zori (sandals/crocs)",
@@ -713,12 +713,12 @@
           {
             "name": "ippon seoi-toshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=b0yLt7UHGZQ"
+            "youtubeUrl": "https://www.youtube.com/watch?v=vu1TMVNnq34"
           },
           {
             "name": "morote-seoi-toshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=ne3i9DoBQU0"
+            "youtubeUrl": "https://www.youtube.com/watch?v=vu1TMVNnq34"
           }
         ]
       }
@@ -739,29 +739,29 @@
           {
             "name": "kosoto gari",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=T3rSf8CcHg4"
+            "youtubeUrl": "https://www.youtube.com/watch?v=jeQ541ScLB4"
           },
           {
             "name": "Ko-uchi-gari",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=5E20xuzaXNw"
+            "youtubeUrl": "https://www.youtube.com/watch?v=3Jb3tZvr9Ng"
           },
           {
             "name": "Tai-otoshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=Q5kH1IIid-Q"
+            "youtubeUrl": "https://www.youtube.com/watch?v=4x6S3Q-Ktv8"
           }
         ],
         "newaza": [
           {
             "name": "kuzure kami-shiho gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=kmeqRY-uFQ8"
+            "youtubeUrl": "https://www.youtube.com/watch?v=YUrogQWdwiY"
           },
           {
             "name": "Kami-shiho-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=2evEh7OBnBg"
+            "youtubeUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=203s"
           }
         ],
         "freePractice": [
@@ -828,7 +828,7 @@
           {
             "name": "kouchi-gaeshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=aENEt9_VmuU"
+            "youtubeUrl": "https://www.youtube.com/watch?v=_MWAdYi_LC4"
           }
         ]
       }
@@ -849,29 +849,29 @@
           {
             "name": "Harai-goshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=_gcIWtS-9Ms"
+            "youtubeUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=116s"
           },
           {
             "name": "Koshi-guruma",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=psG_Xx8NiIA"
+            "youtubeUrl": "https://www.youtube.com/watch?v=SU7Id6uVJ44"
           },
           {
             "name": "o-guruma",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=ujxkj6EJSb0"
+            "youtubeUrl": "https://www.youtube.com/watch?v=SnZciTAY9vc"
           }
         ],
         "newaza": [
           {
             "name": "Uki-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=uWI6s_2Bnmw"
+            "youtubeUrl": "https://www.youtube.com/watch?v=e_lAjik1SUM"
           },
           {
             "name": "Ura-Gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=uWI6s_2Bnmw"
+            "youtubeUrl": "https://www.youtube.com/watch?v=eeAHZB0v3XY"
           }
         ],
         "freePractice": [
@@ -933,7 +933,7 @@
           {
             "name": "harai-goshi-gaeshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=t2hgLa7BZbE"
+            "youtubeUrl": "https://www.youtube.com/watch?v=4U3It-7PPsc"
           }
         ]
       }
@@ -954,24 +954,24 @@
           {
             "name": "Uchi-mata",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=N9lpgFLKqvE"
+            "youtubeUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=72s"
           },
           {
             "name": "Okuri-ashi barai",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=2WHtL7Rzwfs"
+            "youtubeUrl": "https://www.youtube.com/watch?v=nw1ZdRjrdRI"
           }
         ],
         "newaza": [
           {
             "name": "Ushiro-kesa-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=wL1QrvYbyjo"
+            "youtubeUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=195s"
           },
           {
             "name": "Mukura-kesa-gatame",
             "sourceUrl": "",
-            "youtubeUrl": ""
+            "youtubeUrl": "https://www.youtube.com/watch?v=e5HrhANfDcU&pp=ygUabWFrdXJhIGtlc2EgZ2F0YW1lIGtvZG9rYW4%3D"
           }
         ],
         "freePractice": [
@@ -1021,24 +1021,24 @@
           {
             "name": "ne-waza",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=3UnJa3bn0h8"
+            "youtubeUrl": "https://www.youtube.com/watch?v=guJ-HlAKEA8"
           },
           {
             "name": "tachi-waza",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=FqbdGHcDqDE"
+            "youtubeUrl": "https://www.youtube.com/watch?v=z5qYfCEcZOU"
           }
         ],
         "additionalLearning": [
           {
             "name": "uchi-mata gaeshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=rzOSmEiuVtg"
+            "youtubeUrl": "https://www.youtube.com/watch?v=Sy6sLWxkWYw"
           },
           {
             "name": "uchi-mata sukashi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=0Fpw60A1_pw"
+            "youtubeUrl": "https://www.youtube.com/watch?v=V-RS3uhtVWM"
           }
         ]
       }
@@ -1059,19 +1059,19 @@
           {
             "name": "Tsurikomi-goshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=4HJumX7ArOI"
+            "youtubeUrl": "https://www.youtube.com/watch?v=McfzA0yRVt4"
           },
           {
             "name": "Sode Tsurikomi-goshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=4HJumX7ArOI"
+            "youtubeUrl": "https://www.youtube.com/watch?v=QsmAxpmYLOI"
           }
         ],
         "newaza": [
           {
             "name": "Sangaku-Gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=qQK09Llq37E"
+            "youtubeUrl": "https://www.youtube.com/watch?v=WefAmW4azhk"
           }
         ],
         "freePractice": [
@@ -1126,19 +1126,19 @@
           {
             "name": "ippon (full point)",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=_gcIWtS-9Ms"
+            "youtubeUrl": "https://www.youtube.com/watch?v=bkhBZzE2HpM"
           }
         ],
         "additionalLearning": [
           {
             "name": "uchi-mata makikomi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=AJy_muVxkaE"
+            "youtubeUrl": "https://www.youtube.com/watch?v=jZXENTLpJCI"
           },
           {
             "name": "harai makikomi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=MWd5CYkm2zI"
+            "youtubeUrl": "https://www.youtube.com/watch?v=VBaHzKaCXss"
           }
         ]
       }
@@ -1159,19 +1159,19 @@
           {
             "name": "Hane-goshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=n7GP5S41Os8"
+            "youtubeUrl": "https://www.youtube.com/watch?v=M9_7De6A1kk"
           },
           {
             "name": "Tsuri-goshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=_rag76pFL9U"
+            "youtubeUrl": "https://www.youtube.com/watch?v=51Htlp7xEvE"
           }
         ],
         "newaza": [
           {
             "name": "Ude-hishigi-juji-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=4oO_C30oCCU"
+            "youtubeUrl": "https://www.youtube.com/watch?v=OWgSOlCuMXw"
           }
         ],
         "freePractice": [
@@ -1233,7 +1233,7 @@
           {
             "name": "hane-goshi gaeshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=vqT3W-ByaEw"
+            "youtubeUrl": "https://www.youtube.com/watch?v=9bZAZSBtnGs"
           }
         ]
       }
@@ -1254,19 +1254,19 @@
           {
             "name": "Ashi-guruma",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=c7pqq2sC8Ng"
+            "youtubeUrl": "https://www.youtube.com/watch?v=ROeayhvom9U"
           },
           {
             "name": "Harai-Tsurikomi-Ashi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=23ATiD6TsZs"
+            "youtubeUrl": "https://www.youtube.com/watch?v=gGPXvWL8VbE"
           }
         ],
         "newaza": [
           {
             "name": "Ude Garami",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=_C797-BwJ2A"
+            "youtubeUrl": "https://www.youtube.com/watch?v=AIlTvZb4RlE"
           }
         ],
         "freePractice": [
@@ -1309,7 +1309,7 @@
           {
             "name": "self-control",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=4kdBgXd2mYE"
+            "youtubeUrl": ""
           }
         ],
         "terminology": [
@@ -1323,7 +1323,7 @@
           {
             "name": "yama-arashi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=PUCN_gTYhfY"
+            "youtubeUrl": "https://www.youtube.com/watch?v=MGlyKmSuzdc"
           }
         ]
       }
@@ -1344,19 +1344,19 @@
           {
             "name": "Yoko-otoshi",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=Uu9XXHHYMRo"
+            "youtubeUrl": "https://www.youtube.com/watch?v=MnNG67pF_a0"
           },
           {
             "name": "Ko-soto-gake",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=jl99iUTlIVY"
+            "youtubeUrl": "https://www.youtube.com/watch?v=8b6kY4s4zH4"
           }
         ],
         "newaza": [
           {
             "name": "Ude-hishigi-ude-gatame",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=_C797-BwJ2A"
+            "youtubeUrl": "https://www.youtube.com/watch?v=SBf0aTma1VI"
           }
         ],
         "freePractice": [
@@ -1399,26 +1399,26 @@
           {
             "name": "friendship",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=r1zGVN_S0IU"
+            "youtubeUrl": ""
           }
         ],
         "terminology": [
           {
             "name": "shime-waza (strangles)",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=0BuqVnafVSg"
+            "youtubeUrl": "https://www.youtube.com/watch?v=_GxcFx8LZRk"
           },
           {
             "name": "kansetsu-waza (armlocks)",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=JtB79Ma4htw"
+            "youtubeUrl": "https://www.youtube.com/watch?v=6DnvhY0tQVM"
           }
         ],
         "additionalLearning": [
           {
             "name": "daki-wakare",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=858jvGv7pQE"
+            "youtubeUrl": "https://www.youtube.com/watch?v=Hr0cOMGBDYo"
           }
         ]
       }
@@ -1439,24 +1439,24 @@
           {
             "name": "Tomoe-nage",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=-euJliq9XcY"
+            "youtubeUrl": "https://www.youtube.com/watch?v=880WbHvHv6A"
           }
         ],
         "newaza": [
           {
             "name": "Gyaku Juji-Jime",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=XUAGxrr_D6s"
+            "youtubeUrl": "https://www.youtube.com/watch?v=t3tQriIPdlI"
           },
           {
             "name": "Kata Juji-Jime",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+            "youtubeUrl": "https://www.youtube.com/watch?v=3VZVUAmiMD8"
           },
           {
             "name": "Nami Juji-Jime",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+            "youtubeUrl": "https://www.youtube.com/watch?v=k2cHry9HByQ"
           }
         ],
         "freePractice": [
@@ -1513,7 +1513,7 @@
           {
             "name": "set 2 nage-no-kata",
             "sourceUrl": "",
-            "youtubeUrl": "https://www.youtube.com/watch?v=u34wRSY-suM"
+            "youtubeUrl": "https://www.youtube.com/watch?v=bkhBZzE2HpM"
           }
         ]
       }
