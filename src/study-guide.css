@@ -93,21 +93,22 @@ body {
 .sg-koka-card {
   margin-top: 0.8rem;
   display: flex;
-  flex-direction: row;
-  gap: 0.8rem;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.55rem;
+  align-items: flex-start;
 }
 
 .sg-hero-links {
   margin-top: 0.8rem;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem 1.2rem;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .sg-koka-actions {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.55rem;
   flex-wrap: wrap;
 }
@@ -134,8 +135,7 @@ body {
 }
 
 .sg-koka-card .sg-koka-actions {
-  flex: 1 1 auto;
-  min-width: 0;
+  flex: 0 0 auto;
 }
 
 .sg-koka-thumb-link img {
