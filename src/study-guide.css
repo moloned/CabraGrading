@@ -92,26 +92,24 @@ body {
 
 .sg-koka-card {
   margin-top: 0.8rem;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 0.55rem;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  align-items: center;
 }
 
 .sg-hero-links {
   margin-top: 0.8rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, max-content));
   gap: 1rem 1.2rem;
   align-items: start;
 }
 
 .sg-koka-actions {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.55rem;
-  flex-wrap: nowrap;
-  width: max-content;
+  flex-wrap: wrap;
 }
 
 .sg-koka-thumb-link {
@@ -129,6 +127,15 @@ body {
   height: 160px;
   object-fit: cover;
   object-position: top;
+}
+
+.sg-koka-card .sg-koka-thumb-link {
+  flex: 0 0 auto;
+}
+
+.sg-koka-card .sg-koka-actions {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .sg-koka-thumb-link img {
