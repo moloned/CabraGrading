@@ -85,12 +85,24 @@ body {
   color: #ffffff !important;
 }
 
+.sg-home-link-inline {
+  margin: 0;
+  white-space: nowrap;
+}
+
 .sg-koka-card {
   margin-top: 0.8rem;
   display: inline-flex;
   flex-direction: column;
   gap: 0.55rem;
   align-items: flex-start;
+}
+
+.sg-koka-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
 }
 
 .sg-koka-thumb-link {

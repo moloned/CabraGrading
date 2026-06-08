@@ -43,16 +43,18 @@ function KyuStudyGuidePage() {
       <header className="sg-hero">
         <p className="sg-kicker">Cabra Judo Club</p>
         <h1>Adult Kyu Study Guide</h1>
-        <a href={publicAsset('/index.html')} className="sg-home-link">
-          Back to Cabra Grading
-        </a>
         <div className="sg-koka-card">
           <a href={syllabusPdfUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open IJA Grading Information 2024 PDF">
             <img src={syllabusCover} alt="IJA Grading Information 2024 cover" className="sg-koka-thumb" loading="lazy" />
           </a>
-          <a href={syllabusPdfUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
-            Open IJA Grading PDF
-          </a>
+          <div className="sg-koka-actions">
+            <a href={syllabusPdfUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
+              Open IJA Grading PDF
+            </a>
+            <a href={publicAsset('/index.html')} className="sg-home-link sg-home-link-inline">
+              Back to Cabra Grading
+            </a>
+          </div>
         </div>
       </header>
 

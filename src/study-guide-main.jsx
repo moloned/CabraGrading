@@ -43,16 +43,18 @@ function StudyGuidePage() {
       <header className="sg-hero">
         <p className="sg-kicker">Cabra Judo Club</p>
         <h1>Mon Study Guide</h1>
-        <a href={publicAsset('/index.html')} className="sg-home-link">
-          Back to Cabra Grading
-        </a>
         <div className="sg-koka-card">
           <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open Koka Kids PDF">
             <img src={kokaKidsCover} alt="Koka Kids PDF cover" className="sg-koka-thumb" loading="lazy" />
           </a>
-          <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
-            Open Koka Kids PDF
-          </a>
+          <div className="sg-koka-actions">
+            <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
+              Open Koka Kids PDF
+            </a>
+            <a href={publicAsset('/index.html')} className="sg-home-link sg-home-link-inline">
+              Back to Cabra Grading
+            </a>
+          </div>
         </div>
       </header>
 

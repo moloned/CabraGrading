@@ -5,12 +5,15 @@ Last updated: May 16, 2026
 Cabra Grading is a React + Vite grading platform for Cabra Judo Club.
 
 It supports:
+Last updated: June 8, 2026
 - Coach setup and candidate selection
 - Junior and senior grading paths
 - Live syllabus loaded from Google Sheets
 - XLSX-powered study guide page with EfficientJudo links for each syllabus item
 - Separate Adult Kyu study guide sourced from IJA Grading Syllabus PDF (5th Kyu to 1st Kyu)
-- Grading checklist grouped by technique category
+- Mon study guide page with Kodokan / Kodomo no Kata video links and a Koka Kids PDF resource card
+- Separate Adult Kyu study guide sourced from the IJA Grading Syllabus PDF (5th Kyu to 1st Kyu) with a PDF resource card
+- Return links on both study guide pages back to the main Cabra Grading page
 - Belt previews and belt colour swatches
 - Certificate rendering and PDF download
 - Session export: A4-landscape IJA summary PDF and CSV report
@@ -37,35 +40,19 @@ It supports:
 ## Available Scripts
 
 - npm run dev: Start Vite development server
-- npm run build: Create production build
-- npm run build:all: Regenerate study guide data and build production assets
-- npm run lint: Run ESLint
-- npm run preview: Preview built app
-- npm run generate:study-guide: Parse IJA_Grading_Syllabus.xlsx to src/data/studyGuideData.json
-- npm run generate:adult-kyu-guide: Build adult Kyu dataset from PDF-derived source pages to src/data/adultKyuStudyGuideData.json
-
 ## Data Inputs
 
 The app loads candidates from `public/CabraMembers.csv` by default. A different CSV can be uploaded via the UI.
 
 Expected CSV fields:
 - First Name / Last Name (or combined Full Name)
-- Grade (e.g. `1s`, `2s`, `3s`, `2m`–`12m`, `5k`, `4k`, `3k`)
-- Date of Birth
-- IJA Licence number
-
 The parser is tolerant to header naming variations and normalises keys.
 
 ## Grading Logic Overview
 
 - Candidates under 14 are handled as junior candidates.
-- Candidates 14 and over are handled as senior candidates.
-- The grading page grade selector is candidate-aware:
-  - Junior candidates see Shamrock (1s–3s) and Mon (2m–12m) grade options.
   - Senior candidates see Senior Kyu options (5th, 4th, 3rd Kyu).
 - On recording a Pass or Fail the app auto-advances to the next candidate.
-- After the final candidate is graded the app returns automatically to the coach page.
-
 ## Syllabus Source
 
 Grading requirements (`TAB_EXAMS_BY_GRADE`) are loaded live from the IJA Grading Syllabus Google Sheet:
@@ -83,28 +70,19 @@ Both exports are triggered from the coach page once candidates have been graded.
 Columns: No, Full Name, IJA Licence number, Current Grade Held, New Grade Awarded, Result, Coach, Date grading took place, Fee
 
 - Saved with a UTF-8 BOM so the euro sign in the Fee column displays correctly in Excel.
-- Fee values: €2.50 Shamrock · €5.00 Mon · €10.00 Kyu
-
 ### PDF Summary (A4 Landscape)
 
 - IJA logo top-left, club logo top-right.
-- Table columns: No, Full Name, IJA Licence number, Current Grade Held, New Grade Awarded, Result, Fee
-- Footer fields: Signed by the Grader, Name of the IJA Club, Date grading took place.
-
 ## Belt Mapping
 
 Default belt images are in `public/belts` and are selected by grade for certificates and grading preview.
 
 Coach-page swatches use belt colour arrays:
 - Junior swatches are derived from the syllabus grade definitions.
-- Senior swatches: 5th Kyu → yellow, 4th Kyu → orange, 3rd Kyu → green.
-
 ## Certificate Mascot
 
 Certificate mascot defaults are age-path aware:
 - Junior certificates use JudoMonkey.
-- Senior certificates use CabraGOATS.
-
 A custom mascot image uploaded in the UI overrides both defaults.
 
 ## Utility Scripts
@@ -118,13 +96,6 @@ Removes edge-connected background pixels from configured source images and write
 ## Project Structure
 
 - src/App.jsx: Main grading app logic and UI
-- src/App.css: Application styling
-- public/belts/: Belt artwork
-- public/clean/: Logo and image assets with transparent backgrounds
-- public/CabraMembers.csv: Default candidate list
-- public/CabraGOATS.png: Senior certificate mascot
-- scripts/remove-bg.mjs: Background removal utility
-
 ## How the App Works
 
 ### Workflow
@@ -159,4 +130,4 @@ The app is entirely client-side — no backend server. All state is in React mem
 This app can be deployed to GitHub Pages.
 
 - Full instructions: see [DEPLOY.md](DEPLOY.md)
-- Typical publish command: `npm run deploy`
+
