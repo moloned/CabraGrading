@@ -9,6 +9,7 @@ It supports:
 - Junior and senior grading paths
 - Live syllabus loaded from Google Sheets
 - XLSX-powered study guide page with EfficientJudo links for each syllabus item
+- Separate Adult Kyu study guide sourced from IJA Grading Syllabus PDF (5th Kyu to 1st Kyu)
 - Grading checklist grouped by technique category
 - Belt previews and belt colour swatches
 - Certificate rendering and PDF download
@@ -41,6 +42,7 @@ It supports:
 - npm run lint: Run ESLint
 - npm run preview: Preview built app
 - npm run generate:study-guide: Parse IJA_Grading_Syllabus.xlsx to src/data/studyGuideData.json
+- npm run generate:adult-kyu-guide: Build adult Kyu dataset from PDF-derived source pages to src/data/adultKyuStudyGuideData.json
 
 ## Data Inputs
 

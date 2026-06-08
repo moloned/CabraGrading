@@ -2701,6 +2701,14 @@ function App() {
           >
             Open Study Guide
           </a>
+          <a
+            className="btn btn-dark topbar-study-link"
+            href={publicAsset('/kyu-study-guide.html')}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open Adult Kyu Guide
+          </a>
         </div>
 
       </header>

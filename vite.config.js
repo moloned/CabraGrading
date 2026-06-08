@@ -13,7 +13,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(rootDir, 'index.html'),
-        studyGuide: resolve(rootDir, 'study-guide.html')
+        studyGuide: resolve(rootDir, 'study-guide.html'),
+        adultKyuGuide: resolve(rootDir, 'kyu-study-guide.html')
       }
     }
   }

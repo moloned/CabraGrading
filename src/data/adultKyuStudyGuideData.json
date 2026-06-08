@@ -1,0 +1,1297 @@
+{
+  "source": "https://irishjudoassociation.ie/wp-content/uploads/2024/02/IJA-Grading-Syllabus-V8-2024-16.01.2024.pdf",
+  "generatedAt": "2026-06-08T11:12:51.681Z",
+  "channelUrl": "https://www.youtube.com/@EfficientJudo",
+  "grades": [
+    {
+      "gradeId": "5k",
+      "gradeName": "5th Kyu - Senior Yellow Belt",
+      "pathway": "Core Technical",
+      "sourcePages": [
+        70,
+        86
+      ],
+      "categories": {
+        "ukemi": [
+          {
+            "name": "Back",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_-uHf0byR-I"
+          },
+          {
+            "name": "Front",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sSkrQLQy0bs"
+          },
+          {
+            "name": "Left Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Right Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Forward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=kbiLot6laks"
+          },
+          {
+            "name": "Backward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_g7rvsxTkz8"
+          },
+          {
+            "name": "Left side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          },
+          {
+            "name": "Right Side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "De Ashi Barai",
+            "youtubeUrl": "https://www.youtube.com/watch?v=gW9LEvVmG2o"
+          },
+          {
+            "name": "Uki Goshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=5jVF6r366Kg"
+          },
+          {
+            "name": "O Soto Gari",
+            "youtubeUrl": "https://www.youtube.com/watch?v=KeIPk8O58zs"
+          },
+          {
+            "name": "O Uchi Gari",
+            "youtubeUrl": "https://www.youtube.com/watch?v=I3BWf1ZoIuc"
+          },
+          {
+            "name": "Hiza Guruma",
+            "youtubeUrl": "https://www.youtube.com/watch?v=a1RZvytW3OI"
+          },
+          {
+            "name": "Sasae Tsurikomi Ashi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=MiGljHOokvE"
+          },
+          {
+            "name": "Morote Seoi Nage",
+            "youtubeUrl": "https://www.youtube.com/watch?v=eWEW9SfI5xg"
+          },
+          {
+            "name": "O Goshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=VLYKx-Fwhxg"
+          },
+          {
+            "name": "Ippon Seoi Nage",
+            "youtubeUrl": "https://www.youtube.com/watch?v=OmKfUXAAdZ0"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Kesa-Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=3UnJa3bn0h8"
+          },
+          {
+            "name": "Kuzure-Kesa-Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=GcAh8oFd1PI"
+          },
+          {
+            "name": "Kata-Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+          },
+          {
+            "name": "Tate-Shiho-Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=XjWzNxlKH1M"
+          },
+          {
+            "name": "Mune Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=lIt5vywPBF0"
+          },
+          {
+            "name": "Kuzure Tate Shiho Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Sx7bgjx3O8Y"
+          },
+          {
+            "name": "Yoko-Shiho-Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=1GJn6OEyuO4"
+          },
+          {
+            "name": "Kuzure Yoko Shiho Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=54fQM7dYz0M"
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "Agura & Seiza",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Ritsu rei, Za rei",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Bow into and out of Dojo & Mat Area",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any Combination",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any Counter",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any Turnover to hold",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Escape from holds",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "Hygiene & Safety",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Fair Play, Friendship",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Presentation: How to tie your Belt",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Courtesy: To be polite to others.",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "REI",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Hajime",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Matte",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Ukemi",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Judoka",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Sensei",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Uke",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Tori",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Dojo",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Tatami",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Judo GI",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Obi",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Zori",
+            "youtubeUrl": ""
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "Throw for throw",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "5 Skills",
+            "youtubeUrl": ""
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "4k",
+      "gradeName": "4th Kyu - Senior Orange Belt",
+      "pathway": "Core Technical",
+      "sourcePages": [
+        71,
+        87
+      ],
+      "categories": {
+        "ukemi": [
+          {
+            "name": "Back",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_-uHf0byR-I"
+          },
+          {
+            "name": "Front",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sSkrQLQy0bs"
+          },
+          {
+            "name": "Left Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Right Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Forward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=kbiLot6laks"
+          },
+          {
+            "name": "Backward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_g7rvsxTkz8"
+          },
+          {
+            "name": "Left side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          },
+          {
+            "name": "Right Side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Kosoto Gari",
+            "youtubeUrl": "https://www.youtube.com/watch?v=T3rSf8CcHg4"
+          },
+          {
+            "name": "Ko Uchi Gari",
+            "youtubeUrl": "https://www.youtube.com/watch?v=5E20xuzaXNw"
+          },
+          {
+            "name": "Tai O Toshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Q5kH1IIid-Q"
+          },
+          {
+            "name": "Harai Goshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_gcIWtS-9Ms"
+          },
+          {
+            "name": "Koshi Guruma",
+            "youtubeUrl": "https://www.youtube.com/watch?v=psG_Xx8NiIA"
+          },
+          {
+            "name": "O Guruma",
+            "youtubeUrl": "https://www.youtube.com/watch?v=ujxkj6EJSb0"
+          },
+          {
+            "name": "Uchimata",
+            "youtubeUrl": "https://www.youtube.com/watch?v=N9lpgFLKqvE"
+          },
+          {
+            "name": "Okuri Ashi Barai",
+            "youtubeUrl": "https://www.youtube.com/watch?v=2WHtL7Rzwfs"
+          },
+          {
+            "name": "Tsurikomi Goshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4HJumX7ArOI"
+          },
+          {
+            "name": "Sode Tsuri Komi Goshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=KyLgGFs-tEk"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Kuzure-Kami-Shiho-Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=kmeqRY-uFQ8"
+          },
+          {
+            "name": "Kami-Shiho-Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=2evEh7OBnBg"
+          },
+          {
+            "name": "Uki-Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=uWI6s_2Bnmw"
+          },
+          {
+            "name": "Ura-Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=uWI6s_2Bnmw"
+          },
+          {
+            "name": "Ushiro-kesa-gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=wL1QrvYbyjo"
+          },
+          {
+            "name": "Mukura Kesa Gatame",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Sangaku-Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=qQK09Llq37E"
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "Any Combination",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any Counter",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any Turnover to hold",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Escape from holds",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "Courage: To face difficulties with bravery.",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Honesty: To be sincere with your thoughts and actions.",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Honour: To do what is right and stand by your principles.",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Modesty: To be without ego in your actions and thoughts",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "Uchikomi",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Randori",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Shai",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Sona Mama",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Yoshi",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Newaza",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Tachi Waza",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Wazari",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Ippon",
+            "youtubeUrl": ""
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "Throw for throw",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "10 Skills",
+            "youtubeUrl": ""
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "3k",
+      "gradeName": "3rd Kyu - Senior Green Belt",
+      "pathway": "Core Technical",
+      "sourcePages": [
+        72,
+        88
+      ],
+      "categories": {
+        "ukemi": [
+          {
+            "name": "Back",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_-uHf0byR-I"
+          },
+          {
+            "name": "Front",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sSkrQLQy0bs"
+          },
+          {
+            "name": "Left Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Right Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Forward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=kbiLot6laks"
+          },
+          {
+            "name": "Backward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_g7rvsxTkz8"
+          },
+          {
+            "name": "Left side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          },
+          {
+            "name": "Right Side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Hane Goshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=n7GP5S41Os8"
+          },
+          {
+            "name": "Tsuri Goshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_rag76pFL9U"
+          },
+          {
+            "name": "Ashi Guruma",
+            "youtubeUrl": "https://www.youtube.com/watch?v=c7pqq2sC8Ng"
+          },
+          {
+            "name": "Harai Tsurikomi Ashi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=23ATiD6TsZs"
+          },
+          {
+            "name": "Yoko O Toshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Uu9XXHHYMRo"
+          },
+          {
+            "name": "Ko-Soto-Gake",
+            "youtubeUrl": "https://www.youtube.com/watch?v=jl99iUTlIVY"
+          },
+          {
+            "name": "Tomoe Nage",
+            "youtubeUrl": "https://www.youtube.com/watch?v=-euJliq9XcY"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Ude-hishigi-juji-gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4oO_C30oCCU"
+          },
+          {
+            "name": "Ude-garami",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_C797-BwJ2A"
+          },
+          {
+            "name": "Ude-hishigi-ude-gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_C797-BwJ2A"
+          },
+          {
+            "name": "Gyaku Juji-jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=XUAGxrr_D6s"
+          },
+          {
+            "name": "Kata-juji-jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+          },
+          {
+            "name": "Nami-juji-jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "Any Combination",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any Counter",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any Turnover to hold",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Escape from holds",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "Respect: To appreciate others.",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Self Control: To be in control of your emotions.",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Friendship: To be a good companion and friend.",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Explain Judo's moral code",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "Shido",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Hansoku Make",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Score signals",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Contest etiquette",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Shime Waza",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Kansetsu Waza",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Kata",
+            "youtubeUrl": ""
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "Randori",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "12 Skills",
+            "youtubeUrl": ""
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "2k-competition",
+      "gradeName": "2nd Kyu - Senior Blue Belt (Competition Pathway)",
+      "pathway": "Competition",
+      "sourcePages": [
+        73,
+        89
+      ],
+      "categories": {
+        "ukemi": [
+          {
+            "name": "Back",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_-uHf0byR-I"
+          },
+          {
+            "name": "Front",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sSkrQLQy0bs"
+          },
+          {
+            "name": "Left Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Right Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Forward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=kbiLot6laks"
+          },
+          {
+            "name": "Backward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_g7rvsxTkz8"
+          },
+          {
+            "name": "Left side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          },
+          {
+            "name": "Right Side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Sumi Gaeshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=0BuqVnafVSg"
+          },
+          {
+            "name": "Uki O Toshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=d8Cmcfvh7M8"
+          },
+          {
+            "name": "Tani O Toshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=i_yvO3ICpgs"
+          },
+          {
+            "name": "Hane Makikomi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=wG5kQT7M8is"
+          },
+          {
+            "name": "Soto Makikomi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=BcfGFR1CWss"
+          },
+          {
+            "name": "O Guruma",
+            "youtubeUrl": "https://www.youtube.com/watch?v=ujxkj6EJSb0"
+          },
+          {
+            "name": "Utsuri Goshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=E81rR10wfXU"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Ude Hishigi Hiza Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=lIt5vywPBF0"
+          },
+          {
+            "name": "Ude Hishigi Waki Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=2evEh7OBnBg"
+          },
+          {
+            "name": "Ude Hishigi Ashi Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4oO_C30oCCU"
+          },
+          {
+            "name": "Okuri Eri Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=P99h4aocIRs"
+          },
+          {
+            "name": "Ude Hishigi Hara Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=uWI6s_2Bnmw"
+          },
+          {
+            "name": "Hadaka Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=3GpTJr-LEJY"
+          },
+          {
+            "name": "Kata Ha Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=BOysQFwvMLo"
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "2 Contest Wins (Level 3 or Level 4 Event)",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any Combination",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any Counter",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any turnover or set up to technique",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Escape from holds",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "Explain Seiryoku zenyo (Maximum efficiency)",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "Read and complete Competition Sheets",
+            "youtubeUrl": ""
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "Area Randori / Level 3 Contest",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "18 Skills",
+            "youtubeUrl": ""
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "2k-advanced",
+      "gradeName": "2nd Kyu - Senior Blue Belt (Advanced Technical Pathway)",
+      "pathway": "Advanced Technical",
+      "sourcePages": [
+        90
+      ],
+      "categories": {
+        "ukemi": [
+          {
+            "name": "Back",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_-uHf0byR-I"
+          },
+          {
+            "name": "Front",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sSkrQLQy0bs"
+          },
+          {
+            "name": "Left Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Right Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Forward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=kbiLot6laks"
+          },
+          {
+            "name": "Backward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_g7rvsxTkz8"
+          },
+          {
+            "name": "Left side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          },
+          {
+            "name": "Right Side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Sumi Gaeshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=0BuqVnafVSg"
+          },
+          {
+            "name": "Uki O Toshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=d8Cmcfvh7M8"
+          },
+          {
+            "name": "Tani O Toshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=i_yvO3ICpgs"
+          },
+          {
+            "name": "Hane Makikomi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=wG5kQT7M8is"
+          },
+          {
+            "name": "Soto Makikomi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=BcfGFR1CWss"
+          },
+          {
+            "name": "O Guruma",
+            "youtubeUrl": "https://www.youtube.com/watch?v=ujxkj6EJSb0"
+          },
+          {
+            "name": "Utsuri Goshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=E81rR10wfXU"
+          },
+          {
+            "name": "Obi O Toshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=3dGTN6sGbmk"
+          },
+          {
+            "name": "Osoto Makikomi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=-CZO8Mj5cA8"
+          },
+          {
+            "name": "Osoto O Toshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=CYH7zR_yqq4"
+          },
+          {
+            "name": "Uchi Makikomi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=-1DeK0IDOg8"
+          },
+          {
+            "name": "Ko-Uchi-Makikomi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sSEaC2Y1-e0"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Ude Hishigi Hiza Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=lIt5vywPBF0"
+          },
+          {
+            "name": "Ude Hishigi Waki Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=2evEh7OBnBg"
+          },
+          {
+            "name": "Ude Hishigi Ashi Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4oO_C30oCCU"
+          },
+          {
+            "name": "Okuri Eri Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=P99h4aocIRs"
+          },
+          {
+            "name": "Ude Hishigi Hara Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=uWI6s_2Bnmw"
+          },
+          {
+            "name": "Hadaka Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=3GpTJr-LEJY"
+          },
+          {
+            "name": "Kata Ha Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=BOysQFwvMLo"
+          },
+          {
+            "name": "Koshi Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=qQK09Llq37E"
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "Nage No Kata (Sets 1 through 3)",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any 5 Combinations",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any 5 Counters",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any 5 turnovers or set up to technique",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Escapes from any 5 holds",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Demonstrate Light Randori",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "Explain Seiryoku zenyo (Maximum efficiency)",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "Read and complete Competition Sheets",
+            "youtubeUrl": ""
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "Demonstrate Light Randori",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "20 Skills",
+            "youtubeUrl": ""
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "1k-competition",
+      "gradeName": "1st Kyu - Senior Brown Belt (Competition Pathway)",
+      "pathway": "Competition",
+      "sourcePages": [
+        74,
+        91
+      ],
+      "categories": {
+        "ukemi": [
+          {
+            "name": "Back",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_-uHf0byR-I"
+          },
+          {
+            "name": "Front",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sSkrQLQy0bs"
+          },
+          {
+            "name": "Left Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Right Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Forward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=kbiLot6laks"
+          },
+          {
+            "name": "Backward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_g7rvsxTkz8"
+          },
+          {
+            "name": "Left side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          },
+          {
+            "name": "Right Side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Ura Nage",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4hzlipey14I"
+          },
+          {
+            "name": "Sumi O Toshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=CL6tPu1Khc4"
+          },
+          {
+            "name": "Uki Waza",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JtB79Ma4htw"
+          },
+          {
+            "name": "Osoto Guruma",
+            "youtubeUrl": "https://www.youtube.com/watch?v=CdjR9VyQaL0"
+          },
+          {
+            "name": "Yoko Wakare",
+            "youtubeUrl": "https://www.youtube.com/watch?v=fWlPaLwvBV8"
+          },
+          {
+            "name": "Ushiro Goshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sqQ4tr3iERE"
+          },
+          {
+            "name": "Yoko Guruma",
+            "youtubeUrl": "https://www.youtube.com/watch?v=BYD0IRZPlxI"
+          },
+          {
+            "name": "Yoko Gake",
+            "youtubeUrl": "https://www.youtube.com/watch?v=YntUIakl428"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Ude Hishigi Sankaku Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=XUAGxrr_D6s"
+          },
+          {
+            "name": "Ude Hishigi Te Tatame",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Ryo Te Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=g2oxwdGQUM4"
+          },
+          {
+            "name": "Sankaku Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=XUAGxrr_D6s"
+          },
+          {
+            "name": "Kata Te Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+          },
+          {
+            "name": "Tsurkomi Jime",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Sode Guruma Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=BOysQFwvMLo"
+          },
+          {
+            "name": "Tsukkomi Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=qQK09Llq37E"
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "2 Contest Wins (Level 3 or Level 4 Event)",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any Combination",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any Counter",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any turnover or set up to technique",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Escape from holds",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "Explain Jita-Kyoei (Mutual Benefit)",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "Understand Competition Time keeping system",
+            "youtubeUrl": ""
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "Area Randori / Level 3 Contest",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "20 Skills",
+            "youtubeUrl": ""
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "1k-advanced",
+      "gradeName": "1st Kyu - Senior Brown Belt (Advanced Technical Pathway)",
+      "pathway": "Advanced Technical",
+      "sourcePages": [
+        92
+      ],
+      "categories": {
+        "ukemi": [
+          {
+            "name": "Back",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_-uHf0byR-I"
+          },
+          {
+            "name": "Front",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sSkrQLQy0bs"
+          },
+          {
+            "name": "Left Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Right Side",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JBSsWN8E2qs"
+          },
+          {
+            "name": "Forward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=kbiLot6laks"
+          },
+          {
+            "name": "Backward roll",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_g7rvsxTkz8"
+          },
+          {
+            "name": "Left side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          },
+          {
+            "name": "Right Side Rolling",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Ura Nage",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4hzlipey14I"
+          },
+          {
+            "name": "Sumi O Toshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=CL6tPu1Khc4"
+          },
+          {
+            "name": "Uki Waza",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JtB79Ma4htw"
+          },
+          {
+            "name": "Osoto Guruma",
+            "youtubeUrl": "https://www.youtube.com/watch?v=CdjR9VyQaL0"
+          },
+          {
+            "name": "Yoko Wakare",
+            "youtubeUrl": "https://www.youtube.com/watch?v=fWlPaLwvBV8"
+          },
+          {
+            "name": "Ushiro Goshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sqQ4tr3iERE"
+          },
+          {
+            "name": "Yoko Guruma",
+            "youtubeUrl": "https://www.youtube.com/watch?v=BYD0IRZPlxI"
+          },
+          {
+            "name": "Yoko Gake",
+            "youtubeUrl": "https://www.youtube.com/watch?v=YntUIakl428"
+          },
+          {
+            "name": "Obi-Tori-Gaeshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m8Fe_4U5dP8"
+          },
+          {
+            "name": "Tawara Gaeshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=zORVnrrPnmM"
+          },
+          {
+            "name": "Hikikomi Gaeshi",
+            "youtubeUrl": "https://www.youtube.com/watch?v=WV745XfBsgA"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Ude Hishigi Sankaku Gatame",
+            "youtubeUrl": "https://www.youtube.com/watch?v=XUAGxrr_D6s"
+          },
+          {
+            "name": "Ude Hishigi Te Tatame",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Ryo Te Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=g2oxwdGQUM4"
+          },
+          {
+            "name": "Sankaku Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=XUAGxrr_D6s"
+          },
+          {
+            "name": "Kata Te Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+          },
+          {
+            "name": "Tsurkomi Jime",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Sode Guruma Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=BOysQFwvMLo"
+          },
+          {
+            "name": "Tsukkomi Jime",
+            "youtubeUrl": "https://www.youtube.com/watch?v=qQK09Llq37E"
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "Nage No Kata (Sets 1 through 5)",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any 10 Combinations",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any 10 Counters",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Any 10 turnover or set up to techniques",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Escapes from any 10 holds",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Demonstrate Light Randori",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "Explain Jita-Kyoei (Mutual Benefit)",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Foundation Coaching Badge",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Regional referee",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Timekeeper Certificate",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Table official Certificate",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "NB: Only one certificate from the above list is required",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [],
+        "freePractice": [
+          {
+            "name": "Demonstrate Light Randori",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "20 Skills",
+            "youtubeUrl": ""
+          }
+        ]
+      }
+    }
+  ]
+}
