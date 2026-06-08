@@ -98,6 +98,13 @@ body {
   align-items: flex-start;
 }
 
+.sg-hero-links {
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.9rem;
+  justify-items: start;
+}
+
 .sg-koka-actions {
   display: flex;
   align-items: center;
@@ -121,6 +128,10 @@ body {
   height: 160px;
   object-fit: cover;
   object-position: top;
+}
+
+.sg-koka-thumb-link img {
+  max-width: 100%;
 }
 
 .sg-hero .sg-koka-button {
