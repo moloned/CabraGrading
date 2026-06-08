@@ -147,6 +147,16 @@ body {
   object-position: top;
 }
 
+.sg-hero-media-actions .sg-koka-thumb-link {
+  width: 100%;
+  justify-self: stretch;
+}
+
+.sg-hero-media-actions .sg-koka-thumb {
+  width: 100%;
+  height: 160px;
+}
+
 .sg-koka-thumb-link img {
   max-width: 100%;
 }
