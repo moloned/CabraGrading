@@ -64,6 +64,27 @@ body {
   font-weight: 800;
 }
 
+.sg-home-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.35rem;
+  margin-bottom: 0.55rem;
+  padding: 0.42rem 0.8rem;
+  border-radius: 999px;
+  background: #1e293b;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.sg-home-link:hover {
+  background: #0f172a;
+  color: #ffffff !important;
+}
+
 .sg-koka-card {
   margin-top: 0.8rem;
   display: inline-flex;

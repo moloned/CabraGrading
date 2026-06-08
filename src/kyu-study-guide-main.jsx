@@ -43,6 +43,9 @@ function KyuStudyGuidePage() {
       <header className="sg-hero">
         <p className="sg-kicker">Cabra Judo Club</p>
         <h1>Adult Kyu Study Guide</h1>
+        <a href={publicAsset('/index.html')} className="sg-home-link">
+          Back to Cabra Grading
+        </a>
         <div className="sg-koka-card">
           <a href={syllabusPdfUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open IJA Grading Information 2024 PDF">
             <img src={syllabusCover} alt="IJA Grading Information 2024 cover" className="sg-koka-thumb" loading="lazy" />
