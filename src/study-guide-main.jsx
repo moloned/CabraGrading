@@ -45,26 +45,20 @@ function StudyGuidePage() {
       <header className="sg-hero">
         <p className="sg-kicker">Cabra Judo Club</p>
         <h1>Kids Mon Study Guide</h1>
-        <div className="sg-hero-links">
-          <div className="sg-koka-card">
-            <a href={kodomoNoKataUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open Kodomo no Kata video">
-              <img src={kodomoNoKataThumb} alt="Kodomo no Kata video thumbnail" className="sg-koka-thumb" loading="lazy" />
-            </a>
-          </div>
-          <div className="sg-koka-card">
-            <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open Koka Kids PDF">
-              <img src={kokaKidsCover} alt="Koka Kids PDF cover" className="sg-koka-thumb" loading="lazy" />
-            </a>
-          </div>
-        </div>
-        <div className="sg-hero-actions">
-          <a href={kodomoNoKataUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
+        <div className="sg-hero-media-actions">
+          <a href={kodomoNoKataUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link sg-hero-thumb-kodomo" aria-label="Open Kodomo no Kata video">
+            <img src={kodomoNoKataThumb} alt="Kodomo no Kata video thumbnail" className="sg-koka-thumb" loading="lazy" />
+          </a>
+          <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link sg-hero-thumb-koka" aria-label="Open Koka Kids PDF">
+            <img src={kokaKidsCover} alt="Koka Kids PDF cover" className="sg-koka-thumb" loading="lazy" />
+          </a>
+          <a href={kodomoNoKataUrl} target="_blank" rel="noreferrer" className="sg-koka-button sg-hero-btn-kodomo">
             Watch Kodomo no Kata
           </a>
-          <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
+          <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-button sg-hero-btn-koka">
             Open Koka Kids PDF
           </a>
-          <a href={publicAsset('/index.html')} className="sg-home-link sg-home-link-inline">
+          <a href={publicAsset('/index.html')} className="sg-home-link sg-home-link-inline sg-hero-btn-home">
             Back to Cabra Grading
           </a>
         </div>

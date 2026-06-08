@@ -90,35 +90,44 @@ body {
   white-space: nowrap;
 }
 
-.sg-koka-card {
+.sg-hero-media-actions {
   margin-top: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.55rem;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  grid-template-areas:
+    'thumb-kodomo thumb-koka .'
+    'btn-kodomo btn-koka btn-home';
+  column-gap: 0.55rem;
+  row-gap: 0.55rem;
+  align-items: start;
+  justify-content: start;
 }
 
-.sg-hero-links {
-  margin-top: 0.8rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 1.2rem;
-  align-items: flex-start;
+.sg-hero-thumb-kodomo {
+  grid-area: thumb-kodomo;
 }
 
-.sg-hero-actions {
+.sg-hero-thumb-koka {
+  grid-area: thumb-koka;
+}
+
+.sg-hero-btn-kodomo {
+  grid-area: btn-kodomo;
+}
+
+.sg-hero-btn-koka {
+  grid-area: btn-koka;
+}
+
+.sg-hero-btn-home {
+  grid-area: btn-home;
+}
+
+.sg-hero-media-actions .sg-koka-button,
+.sg-hero-media-actions .sg-home-link-inline {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
-  flex-wrap: nowrap;
   width: max-content;
-  max-width: 100%;
-  margin-top: 0.35rem;
-}
-
-.sg-hero-actions .sg-koka-button,
-.sg-hero-actions .sg-home-link-inline {
-  flex: 0 0 auto;
 }
 
 .sg-koka-thumb-link {
@@ -136,10 +145,6 @@ body {
   height: 160px;
   object-fit: cover;
   object-position: top;
-}
-
-.sg-koka-card .sg-koka-thumb-link {
-  flex: 0 0 auto;
 }
 
 .sg-koka-thumb-link img {
