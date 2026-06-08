@@ -106,11 +106,19 @@ body {
   align-items: flex-start;
 }
 
-.sg-koka-actions {
+.sg-hero-actions {
   display: flex;
   align-items: center;
   gap: 0.55rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: max-content;
+  max-width: 100%;
+  margin-top: 0.35rem;
+}
+
+.sg-hero-actions .sg-koka-button,
+.sg-hero-actions .sg-home-link-inline {
+  flex: 0 0 auto;
 }
 
 .sg-koka-thumb-link {
@@ -131,10 +139,6 @@ body {
 }
 
 .sg-koka-card .sg-koka-thumb-link {
-  flex: 0 0 auto;
-}
-
-.sg-koka-card .sg-koka-actions {
   flex: 0 0 auto;
 }
 

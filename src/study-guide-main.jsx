@@ -50,25 +50,23 @@ function StudyGuidePage() {
             <a href={kodomoNoKataUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open Kodomo no Kata video">
               <img src={kodomoNoKataThumb} alt="Kodomo no Kata video thumbnail" className="sg-koka-thumb" loading="lazy" />
             </a>
-            <div className="sg-koka-actions">
-              <a href={kodomoNoKataUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
-                Watch Kodomo no Kata
-              </a>
-            </div>
           </div>
           <div className="sg-koka-card">
             <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open Koka Kids PDF">
               <img src={kokaKidsCover} alt="Koka Kids PDF cover" className="sg-koka-thumb" loading="lazy" />
             </a>
-            <div className="sg-koka-actions">
-              <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
-                Open Koka Kids PDF
-              </a>
-              <a href={publicAsset('/index.html')} className="sg-home-link sg-home-link-inline">
-                Back to Cabra Grading
-              </a>
-            </div>
           </div>
+        </div>
+        <div className="sg-hero-actions">
+          <a href={kodomoNoKataUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
+            Watch Kodomo no Kata
+          </a>
+          <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
+            Open Koka Kids PDF
+          </a>
+          <a href={publicAsset('/index.html')} className="sg-home-link sg-home-link-inline">
+            Back to Cabra Grading
+          </a>
         </div>
       </header>
 
