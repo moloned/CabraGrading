@@ -2694,20 +2694,20 @@ function App() {
 
         <div className="top-actions">
           <a
-            className="btn btn-dark topbar-study-link"
+            className="btn topbar-study-link topbar-study-link-mon"
             href={publicAsset('/study-guide.html')}
             target="_blank"
             rel="noreferrer"
           >
-            Open Study Guide
+            Mon Study Guide
           </a>
           <a
-            className="btn btn-dark topbar-study-link"
+            className="btn topbar-study-link topbar-study-link-kyu"
             href={publicAsset('/kyu-study-guide.html')}
             target="_blank"
             rel="noreferrer"
           >
-            Open Adult Kyu Guide
+            Kyu Study Guide
           </a>
         </div>
 

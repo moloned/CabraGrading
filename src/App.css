@@ -97,6 +97,24 @@ textarea {
   text-decoration: none;
 }
 
+.topbar-study-link-mon {
+  background: #b91c1c;
+  color: #ffffff;
+}
+
+.topbar-study-link-mon:hover {
+  background: #991b1b;
+}
+
+.topbar-study-link-kyu {
+  background: #facc15;
+  color: #1f2937;
+}
+
+.topbar-study-link-kyu:hover {
+  background: #eab308;
+}
+
 .view-actions-inline {
   display: grid;
   grid-auto-flow: row;

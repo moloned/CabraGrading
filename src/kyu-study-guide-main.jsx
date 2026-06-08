@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './study-guide.css'
 import data from './data/adultKyuStudyGuideData.json'
 
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${String(path || '').replace(/^\/+/, '')}`
+
 const CATEGORY_LABELS = {
   ukemi: 'Ukemi',
   tachiwaza: 'Tachi-waza',
@@ -15,6 +17,9 @@ const CATEGORY_LABELS = {
 }
 
 function KyuStudyGuidePage() {
+  const syllabusPdfUrl = 'https://irishjudoassociation.ie/wp-content/uploads/2024/02/IJA-Grading-Syllabus-V8-2024-16.01.2024.pdf'
+  const syllabusCover = publicAsset('/ija-grading-info-cover.png')
+
   return (
     <div className="sg-page">
       <header className="sg-hero">
@@ -24,6 +29,15 @@ function KyuStudyGuidePage() {
           Based on the IJA PDF syllabus for adult Kyu grades ({' '}
           <a href={data.source} target="_blank" rel="noreferrer">source PDF</a> ) with EfficientJudo links where relevant.
         </p>
+        <p>IJA Grading Information 2024 PDF resource:</p>
+        <div className="sg-koka-card">
+          <a href={syllabusPdfUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open IJA Grading Information 2024 PDF">
+            <img src={syllabusCover} alt="IJA Grading Information 2024 cover" className="sg-koka-thumb" loading="lazy" />
+          </a>
+          <a href={syllabusPdfUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
+            Open IJA Grading PDF
+          </a>
+        </div>
       </header>
 
       <main className="sg-content">

@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './study-guide.css'
 import data from './data/studyGuideData.json'
 
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${String(path || '').replace(/^\/+/, '')}`
+
 const CATEGORY_LABELS = {
   ukemi: 'Ukemi',
   tachiwaza: 'Tachi-waza',
@@ -16,6 +18,9 @@ const CATEGORY_LABELS = {
 }
 
 function StudyGuidePage() {
+  const kokaKidsUrl = 'https://indd.adobe.com/view/ad37a511-225a-41c1-8d3c-0ac13b2ec723'
+  const kokaKidsCover = publicAsset('/koka-kids-cover.png')
+
   return (
     <div className="sg-page">
       <header className="sg-hero">
@@ -25,6 +30,18 @@ function StudyGuidePage() {
           Built from <strong>{data.source}</strong> with links to the{' '}
           <a href={data.channelUrl} target="_blank" rel="noreferrer">EfficientJudo channel</a> for every listed item.
         </p>
+        <p>
+          Koka Kids PDF:{' '}
+          Learn through the illustrated handbook.
+        </p>
+        <div className="sg-koka-card">
+          <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open Koka Kids PDF">
+            <img src={kokaKidsCover} alt="Koka Kids PDF cover" className="sg-koka-thumb" loading="lazy" />
+          </a>
+          <a href={kokaKidsUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
+            Open Koka Kids PDF
+          </a>
+        </div>
       </header>
 
       <main className="sg-content">
