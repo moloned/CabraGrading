@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:all": "npm run generate:study-guide && vite build",
     "deploy": "npm run build && gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate:ija-forms": "node scripts/generate-ija-grading-forms.mjs"
+    "generate:ija-forms": "node scripts/generate-ija-grading-forms.mjs",
+    "generate:study-guide": "node scripts/generate-study-guide-data.mjs"
   },
   "dependencies": {
     "html2canvas": "^1.4.1",
@@ -19,7 +21,8 @@
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^5.7.284",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

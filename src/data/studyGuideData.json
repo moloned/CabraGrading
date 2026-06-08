@@ -1,0 +1,1522 @@
+{
+  "source": "IJA_Grading_Syllabus.xlsx",
+  "generatedAt": "2026-06-08T10:50:44.644Z",
+  "channelUrl": "https://www.youtube.com/@EfficientJudo",
+  "grades": [
+    {
+      "gradeId": "1s",
+      "gradeName": "1st Shamrock",
+      "sheetName": "Shamrock1",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from crouching",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Ushiro-ukemi",
+            "sourceUrl": "https://www.youtube.com/watch?v=_g7rvsxTkz8",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_g7rvsxTkz8"
+          },
+          {
+            "name": "Yoko-ukemi",
+            "sourceUrl": "https://www.youtube.com/watch?v=JCwK1Ia4jsc",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JCwK1Ia4jsc"
+          },
+          {
+            "name": "Mae-mawari-ukemi",
+            "sourceUrl": "https://www.youtube.com/watch?v=kbiLot6laks",
+            "youtubeUrl": "https://www.youtube.com/watch?v=kbiLot6laks"
+          },
+          {
+            "name": "Mae-ukemi",
+            "sourceUrl": "https://www.youtube.com/watch?v=veM5RFdjo0U",
+            "youtubeUrl": "https://www.youtube.com/watch?v=veM5RFdjo0U"
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "de ashi barai",
+            "sourceUrl": "https://www.youtube.com/watch?v=2WHtL7Rzwfs",
+            "youtubeUrl": "https://www.youtube.com/watch?v=2WHtL7Rzwfs"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "kuzure kesa-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=GcAh8oFd1PI"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "coach's choice",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "1 skill",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "agura & seiza",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "listening & paying attentention",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "rei, hajime, matte",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "coach's choice",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "2s",
+      "gradeName": "2nd Shamrock",
+      "sheetName": "Shamrock2",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from crouching",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "Ushiro-ukemi",
+            "sourceUrl": "https://www.youtube.com/watch?v=_g7rvsxTkz8",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_g7rvsxTkz8"
+          },
+          {
+            "name": "Yoko-ukemi",
+            "sourceUrl": "https://www.youtube.com/watch?v=JCwK1Ia4jsc",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JCwK1Ia4jsc"
+          },
+          {
+            "name": "Mae-mawari-ukemi",
+            "sourceUrl": "https://www.youtube.com/watch?v=kbiLot6laks",
+            "youtubeUrl": "https://www.youtube.com/watch?v=kbiLot6laks"
+          },
+          {
+            "name": "Mae-ukemi",
+            "sourceUrl": "https://www.youtube.com/watch?v=veM5RFdjo0U",
+            "youtubeUrl": "https://www.youtube.com/watch?v=veM5RFdjo0U"
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Uki-goshi",
+            "sourceUrl": "https://www.youtube.com/watch?v=5jVF6r366Kg",
+            "youtubeUrl": "https://www.youtube.com/watch?v=5jVF6r366Kg"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Kata-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+          },
+          {
+            "name": "Tate-shiho-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=XjWzNxlKH1M"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "coach's choice",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "2 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "ritsurei",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "za rei",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=veM5RFdjo0U"
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "hygiene",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "safety",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=i_yvO3ICpgs"
+          }
+        ],
+        "terminology": [
+          {
+            "name": "ukemi (breakfall)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JCwK1Ia4jsc"
+          },
+          {
+            "name": "judoka (judo player)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=zsxl52ciw1Q"
+          },
+          {
+            "name": "sensei (coach)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Mwz5At87OxE"
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "coach's choice",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "3s",
+      "gradeName": "3rd Shamrock",
+      "sheetName": "Shamrock3",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Osoto-gari",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=KeIPk8O58zs"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "mune gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=lIt5vywPBF0"
+          },
+          {
+            "name": "kuzure tate-shiho-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Sx7bgjx3O8Y"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "coach's choice",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "3 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "bow onto mat",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "bow off mat",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "fair play",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "friendship",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=r1zGVN_S0IU"
+          }
+        ],
+        "terminology": [
+          {
+            "name": "uke (receiver)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "tori (attacker)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "dojo (judo hall)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sqQ4tr3iERE"
+          },
+          {
+            "name": "tatami (judo mat)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "coach's choice",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "2m",
+      "gradeName": "2nd Mon",
+      "sheetName": "Mon2",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "de ashi barai",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=gW9LEvVmG2o"
+          },
+          {
+            "name": "Uki-goshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=5jVF6r366Kg"
+          },
+          {
+            "name": "Osoto-gari",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=KeIPk8O58zs"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Kesa-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=3UnJa3bn0h8"
+          },
+          {
+            "name": "kuzure kesa-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=GcAh8oFd1PI"
+          },
+          {
+            "name": "Kata-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+          },
+          {
+            "name": "Tate-shiho-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=XjWzNxlKH1M"
+          },
+          {
+            "name": "mune gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=lIt5vywPBF0"
+          },
+          {
+            "name": "kuzure tate-shiho-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Sx7bgjx3O8Y"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "coach's choice",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "3 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "agura",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "seiza",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "ritsurei",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "za rei",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=veM5RFdjo0U"
+          },
+          {
+            "name": "bow onto mat",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "bow off mat",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "listening & paying attention",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "hygiene",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "safety",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=i_yvO3ICpgs"
+          },
+          {
+            "name": "fair play",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "friendship",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=r1zGVN_S0IU"
+          }
+        ],
+        "terminology": [
+          {
+            "name": "rei (bow)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "hajime (begin)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "matte (stop)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "ukemi (breakfall)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JCwK1Ia4jsc"
+          },
+          {
+            "name": "judoka (judo player)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=zsxl52ciw1Q"
+          },
+          {
+            "name": "sensei (coach)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Mwz5At87OxE"
+          },
+          {
+            "name": "uke (receiver)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "tori (attacker)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "dojo (judo hall)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=sqQ4tr3iERE"
+          },
+          {
+            "name": "tatami (judo mat)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "coach's choice",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "3m",
+      "gradeName": "3rd Mon",
+      "sheetName": "Mon3",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "O-uchi-gari",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=I3BWf1ZoIuc"
+          },
+          {
+            "name": "hiza guruma",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=a1RZvytW3OI"
+          },
+          {
+            "name": "sasae tsurikomi ashi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=MiGljHOokvE"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Yoko-shiho-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=1GJn6OEyuO4"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "coach's choice",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "4 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "any combination",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any counter",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any turnover to hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "escape from hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "tie your belt",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=-CZO8Mj5cA8"
+          }
+        ],
+        "terminology": [
+          {
+            "name": "judogi (judo suit)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=gW9LEvVmG2o"
+          },
+          {
+            "name": "obi (belt)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=3dGTN6sGbmk"
+          },
+          {
+            "name": "zori (sandals/crocs)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "o-uchi-gaeshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=V5jQkLDww7g"
+          },
+          {
+            "name": "tsubame-gaeshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_HEibNx3Gw"
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "4m",
+      "gradeName": "4th Mon",
+      "sheetName": "Mon4",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "morote seoi nage",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=eWEW9SfI5xg"
+          },
+          {
+            "name": "O-goshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=VLYKx-Fwhxg"
+          },
+          {
+            "name": "Ippon Seoi-nage",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=OmKfUXAAdZ0"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Yoko-shiho-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=1GJn6OEyuO4"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "throw for throw",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "5 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "any combination",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any counter",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any turnover to hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "escape from hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "courtesy",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "judogi (judo suit)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=gW9LEvVmG2o"
+          },
+          {
+            "name": "obi (belt)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=3dGTN6sGbmk"
+          },
+          {
+            "name": "zori (sandals/crocs)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "ippon seoi-toshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=b0yLt7UHGZQ"
+          },
+          {
+            "name": "morote-seoi-toshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=ne3i9DoBQU0"
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "5m",
+      "gradeName": "5th Mon",
+      "sheetName": "Mon5",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "kosoto gari",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=T3rSf8CcHg4"
+          },
+          {
+            "name": "Ko-uchi-gari",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=5E20xuzaXNw"
+          },
+          {
+            "name": "Tai-otoshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Q5kH1IIid-Q"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "kuzure kami-shiho gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=kmeqRY-uFQ8"
+          },
+          {
+            "name": "Kami-shiho-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=2evEh7OBnBg"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "throw for throw",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "6 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "any combination",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any counter",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any turnover to hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "escape from hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "courage",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "uchikomi (repetition)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "randori (free practice)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "shiai (competition)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "kouchi-gaeshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=aENEt9_VmuU"
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "6m",
+      "gradeName": "6th Mon",
+      "sheetName": "Mon6",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Harai-goshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_gcIWtS-9Ms"
+          },
+          {
+            "name": "Koshi-guruma",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=psG_Xx8NiIA"
+          },
+          {
+            "name": "o-guruma",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=ujxkj6EJSb0"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Uki-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=uWI6s_2Bnmw"
+          },
+          {
+            "name": "Ura-Gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=uWI6s_2Bnmw"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "throw for throw",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "6 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "any combination",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any counter",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any turnover to hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "escape from hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "honesty",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "sono mama (freeze)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "yoshi (unfreeze)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "harai-goshi-gaeshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=t2hgLa7BZbE"
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "7m",
+      "gradeName": "7th Mon",
+      "sheetName": "Mon7",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Uchi-mata",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=N9lpgFLKqvE"
+          },
+          {
+            "name": "Okuri-ashi barai",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=2WHtL7Rzwfs"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Ushiro-kesa-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=wL1QrvYbyjo"
+          },
+          {
+            "name": "Mukura-kesa-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "randori",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "8 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "any combination",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any counter",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any turnover to hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "escape from hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "honour",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "ne-waza",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=3UnJa3bn0h8"
+          },
+          {
+            "name": "tachi-waza",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=FqbdGHcDqDE"
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "uchi-mata gaeshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=rzOSmEiuVtg"
+          },
+          {
+            "name": "uchi-mata sukashi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=0Fpw60A1_pw"
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "8m",
+      "gradeName": "8th Mon",
+      "sheetName": "Mon8",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Tsurikomi-goshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4HJumX7ArOI"
+          },
+          {
+            "name": "Sode Tsurikomi-goshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4HJumX7ArOI"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Sangaku-Gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=qQK09Llq37E"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "randori",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "9 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "any combination",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any counter",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any turnover to hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "escape from hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "modesty",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "wazari (half point)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "ippon (full point)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_gcIWtS-9Ms"
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "uchi-mata makikomi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=AJy_muVxkaE"
+          },
+          {
+            "name": "harai makikomi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=MWd5CYkm2zI"
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "9m",
+      "gradeName": "9th Mon",
+      "sheetName": "Mon9",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Hane-goshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=n7GP5S41Os8"
+          },
+          {
+            "name": "Tsuri-goshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_rag76pFL9U"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Ude-hishigi-juji-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4oO_C30oCCU"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "randori",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "10 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "any combination",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any counter",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any turnover to hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "escape from hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "respect",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "shido (penalty)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "hansoku-make (disqualification)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "hane-goshi gaeshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=vqT3W-ByaEw"
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "10m",
+      "gradeName": "10th Mon",
+      "sheetName": "Mon10",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Ashi-guruma",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=c7pqq2sC8Ng"
+          },
+          {
+            "name": "Harai-Tsurikomi-Ashi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=23ATiD6TsZs"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Ude Garami",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_C797-BwJ2A"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "randori",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "11 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "any combination",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any counter",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any turnover to hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "escape from hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "self-control",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4kdBgXd2mYE"
+          }
+        ],
+        "terminology": [
+          {
+            "name": "Contest signals & etiquette",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "yama-arashi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=PUCN_gTYhfY"
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "11m",
+      "gradeName": "11th Mon",
+      "sheetName": "Mon11",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Yoko-otoshi",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Uu9XXHHYMRo"
+          },
+          {
+            "name": "Ko-soto-gake",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=jl99iUTlIVY"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Ude-hishigi-ude-gatame",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=_C797-BwJ2A"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "randori",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "12 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "any combination",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any counter",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any turnover to hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "escape from hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "friendship",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=r1zGVN_S0IU"
+          }
+        ],
+        "terminology": [
+          {
+            "name": "shime-waza (strangles)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=0BuqVnafVSg"
+          },
+          {
+            "name": "kansetsu-waza (armlocks)",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=JtB79Ma4htw"
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "daki-wakare",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=858jvGv7pQE"
+          }
+        ]
+      }
+    },
+    {
+      "gradeId": "12m",
+      "gradeName": "12th Mon",
+      "sheetName": "Mon12",
+      "categories": {
+        "ukemi": [
+          {
+            "name": "full set from standing",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "tachiwaza": [
+          {
+            "name": "Tomoe-nage",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=-euJliq9XcY"
+          }
+        ],
+        "newaza": [
+          {
+            "name": "Gyaku Juji-Jime",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=XUAGxrr_D6s"
+          },
+          {
+            "name": "Kata Juji-Jime",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+          },
+          {
+            "name": "Nami Juji-Jime",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TFClghvGD9w"
+          }
+        ],
+        "freePractice": [
+          {
+            "name": "randori",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "fundamentalSkills": [
+          {
+            "name": "13 skills",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "performanceSkills": [
+          {
+            "name": "any combination",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any counter",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "any turnover to hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          },
+          {
+            "name": "escape from hold",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "generalBehaviour": [
+          {
+            "name": "explain judo moral code",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "terminology": [
+          {
+            "name": "kata (set pattern)",
+            "sourceUrl": "",
+            "youtubeUrl": ""
+          }
+        ],
+        "additionalLearning": [
+          {
+            "name": "set 2 nage-no-kata",
+            "sourceUrl": "",
+            "youtubeUrl": "https://www.youtube.com/watch?v=u34wRSY-suM"
+          }
+        ]
+      }
+    }
+  ]
+}

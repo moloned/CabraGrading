@@ -2692,6 +2692,17 @@ function App() {
           </div>
         </div>
 
+        <div className="top-actions">
+          <a
+            className="btn btn-dark topbar-study-link"
+            href={publicAsset('/study-guide.html')}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open Study Guide
+          </a>
+        </div>
+
       </header>
 
       <main className="main-wrap">

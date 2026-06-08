@@ -93,6 +93,10 @@ textarea {
   flex-wrap: wrap;
 }
 
+.topbar-study-link {
+  text-decoration: none;
+}
+
 .view-actions-inline {
   display: grid;
   grid-auto-flow: row;

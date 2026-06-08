@@ -8,6 +8,7 @@ It supports:
 - Coach setup and candidate selection
 - Junior and senior grading paths
 - Live syllabus loaded from Google Sheets
+- XLSX-powered study guide page with EfficientJudo links for each syllabus item
 - Grading checklist grouped by technique category
 - Belt previews and belt colour swatches
 - Certificate rendering and PDF download
@@ -36,8 +37,10 @@ It supports:
 
 - npm run dev: Start Vite development server
 - npm run build: Create production build
+- npm run build:all: Regenerate study guide data and build production assets
 - npm run lint: Run ESLint
 - npm run preview: Preview built app
+- npm run generate:study-guide: Parse IJA_Grading_Syllabus.xlsx to src/data/studyGuideData.json
 
 ## Data Inputs
 
