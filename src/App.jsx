@@ -12,6 +12,7 @@ import {
 import html2canvas from 'html2canvas'
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib'
 import './App.css'
+import adultKyuStudyGuideData from './data/adultKyuStudyGuideData.json'
 const publicAsset = (path) => `${import.meta.env.BASE_URL}${String(path || '').replace(/^\/+/, '')}`
 
 const CLUB_LOGO = publicAsset('/clean/CabraLogo-nobg.png')
@@ -20,13 +21,13 @@ const BELT_IMAGE = publicAsset('/belts/white.svg')
 const MASCOT_IMAGE = publicAsset('/clean/JudoMonkey-nobg.png')
 const SENIOR_MASCOT_IMAGE = publicAsset('/CabraGOATS.png')
 const DEFAULT_COACH_CSV = publicAsset('/GradingList.csv')
-const DEFAULT_COACH_PHOTO = publicAsset('/coach-placeholder.svg')
+const DEFAULT_COACH_PHOTO = publicAsset('/alonzo.jpg')
 const getTodayDateString = () => new Date().toLocaleDateString('en-GB')
-const DEFAULT_LAST_GRADING_DATE = '23/5/2025'
+const DEFAULT_LAST_GRADING_DATE = getTodayDateString()
 const DEFAULT_COACH_DETAILS = {
-  name: 'Club Coach',
-  title: 'IJA Grading Coach',
-  licenseNumber: '00-0000',
+  name: 'Alonzo Henderson',
+  title: '6th Dan OLY',
+  licenseNumber: '17-0622',
   club: 'Cabra Judo Club'
 }
 const DEFAULT_COACH_LABEL = [DEFAULT_COACH_DETAILS.name, DEFAULT_COACH_DETAILS.title].filter(Boolean).join(' - ')
@@ -58,11 +59,46 @@ const SENIOR_BELT_COLORS = {
   '3k': ['#10b981']
 }
 
-const SENIOR_SYLLABUS = [
-  { id: '5k', name: '5th Kyu', belt: 'Yellow Belt', beltColors: SENIOR_BELT_COLORS['5k'] },
-  { id: '4k', name: '4th Kyu', belt: 'Orange Belt', beltColors: SENIOR_BELT_COLORS['4k'] },
-  { id: '3k', name: '3rd Kyu', belt: 'Green Belt', beltColors: SENIOR_BELT_COLORS['3k'] }
-]
+const SENIOR_KYU_GRADE_ORDER = ['5k', '4k', '3k']
+
+const SENIOR_KYU_GRADE_META = {
+  '5k': { name: '5th Kyu', belt: 'Yellow Belt' },
+  '4k': { name: '4th Kyu', belt: 'Orange Belt' },
+  '3k': { name: '3rd Kyu', belt: 'Green Belt' }
+}
+
+const ADULT_KYU_GRADE_BY_ID = (adultKyuStudyGuideData?.grades || []).reduce((acc, grade) => {
+  if (grade?.gradeId) acc[grade.gradeId] = grade
+  return acc
+}, {})
+
+const getAdultKyuCategoryNames = (gradeId, categoryKey) => {
+  const items = ADULT_KYU_GRADE_BY_ID?.[gradeId]?.categories?.[categoryKey]
+  if (!Array.isArray(items)) return []
+  return items.map((item) => item?.name).filter(Boolean)
+}
+
+const SENIOR_SYLLABUS = SENIOR_KYU_GRADE_ORDER.map((gradeId) => {
+  const meta = SENIOR_KYU_GRADE_META[gradeId]
+  const freePractice = getAdultKyuCategoryNames(gradeId, 'freePractice')[0]
+  const fundamentalSkillsLabel = getAdultKyuCategoryNames(gradeId, 'fundamentalSkills')[0]
+
+  return {
+    id: gradeId,
+    name: meta.name,
+    belt: meta.belt,
+    beltColors: SENIOR_BELT_COLORS[gradeId],
+    ukemi: getAdultKyuCategoryNames(gradeId, 'ukemi'),
+    tachiwaza: getAdultKyuCategoryNames(gradeId, 'tachiwaza'),
+    newaza: getAdultKyuCategoryNames(gradeId, 'newaza'),
+    performanceSkills: getAdultKyuCategoryNames(gradeId, 'performanceSkills'),
+    behaviour: getAdultKyuCategoryNames(gradeId, 'generalBehaviour'),
+    terminology: getAdultKyuCategoryNames(gradeId, 'terminology'),
+    additionalLearning: getAdultKyuCategoryNames(gradeId, 'additionalLearning'),
+    freePractice: freePractice || 'Throw for throw',
+    fundamentalSkillsLabel: fundamentalSkillsLabel || 'Fundamental skills completed'
+  }
+})
 
 const SHAMROCK_REPORT_ROWS = [
   {
@@ -264,6 +300,31 @@ const TAB_EXAMS_BY_GRADE = {
     fundamentalSkillsLabel: '13 skills'
   }
 }
+
+const SENIOR_KYU_GRADE_ID_SET = new Set(SENIOR_KYU_GRADE_ORDER)
+
+const ADULT_KYU_TAB_EXAMS_BY_GRADE = (adultKyuStudyGuideData?.grades || [])
+  .filter((grade) => SENIOR_KYU_GRADE_ID_SET.has(grade?.gradeId))
+  .reduce((acc, grade) => {
+    const categories = grade?.categories || {}
+    const toNames = (items) => (Array.isArray(items)
+      ? items.map((item) => item?.name).filter(Boolean)
+      : [])
+
+    acc[grade.gradeId] = {
+      ukemi: toNames(categories.ukemi),
+      tachiwaza: toNames(categories.tachiwaza),
+      newaza: toNames(categories.newaza),
+      performanceSkills: toNames(categories.performanceSkills),
+      generalBehaviour: toNames(categories.generalBehaviour),
+      terminology: toNames(categories.terminology),
+      additionalLearning: toNames(categories.additionalLearning),
+      freePractice: toNames(categories.freePractice)[0] || 'Throw for throw',
+      fundamentalSkillsLabel: toNames(categories.fundamentalSkills)[0] || 'Fundamental skills completed'
+    }
+
+    return acc
+  }, {})
 
 const WORKBOOK_MON_ORDER = ['2m', '3m', '4m', '5m', '6m', '7m', '8m', '9m', '10m', '11m', '12m']
 
@@ -1177,6 +1238,7 @@ function App() {
   const [gradingResults, setGradingResults] = useState({})
   const [defaultCoachCsvLoaded, setDefaultCoachCsvLoaded] = useState(false)
   const [coachGroupFilter, setCoachGroupFilter] = useState('junior')
+  const [batchCertExport, setBatchCertExport] = useState(null)
 
   const allGrades = useMemo(
     () => [...SYLLABUS.shamrock, ...SYLLABUS.mon, ...SENIOR_SYLLABUS],
@@ -1196,7 +1258,7 @@ function App() {
     [SYLLABUS]
   )
 
-  const seniorGradeOrder = useMemo(() => ['5k', '4k', '3k'], [])
+  const seniorGradeOrder = useMemo(() => SENIOR_KYU_GRADE_ORDER, [])
 
   const gradeNameById = useMemo(() => {
     return allGrades.reduce((acc, grade) => {
@@ -1409,7 +1471,7 @@ function App() {
   const activeReportRow = useMemo(() => {
     if (!activeGrade) return null
 
-    const tabSections = TAB_EXAMS_BY_GRADE[selectedGradeId]
+    const tabSections = TAB_EXAMS_BY_GRADE[selectedGradeId] || ADULT_KYU_TAB_EXAMS_BY_GRADE[selectedGradeId]
     if (tabSections) {
       return {
         gradeId: selectedGradeId,
@@ -1435,6 +1497,24 @@ function App() {
 
   const reportFreePractice = activeReportRow?.freePractice || activeGrade?.freePractice || 'Coaches choice'
   const reportFundamentalSkills = activeReportRow?.fundamentalSkillsLabel || activeGrade?.fundamentalSkillsLabel || (activeGrade?.skills ? `${activeGrade.skills} Skills` : 'Fundamental skills completed')
+
+  const reportChecklistItemCount = useMemo(() => {
+    if (!activeReportRow) return 0
+
+    return [
+      activeReportRow.ukemi,
+      activeReportRow.tachiwaza,
+      activeReportRow.newaza,
+      activeReportRow.performanceSkills,
+      activeReportRow.generalBehaviour,
+      activeReportRow.terminology,
+      activeReportRow.additionalLearning
+    ].reduce((count, sectionItems) => count + (Array.isArray(sectionItems) ? sectionItems.length : 0), 2)
+  }, [activeReportRow])
+
+  const reportDensityClassName = reportChecklistItemCount >= 38
+    ? 'report-page-dense'
+    : (reportChecklistItemCount >= 30 ? 'report-page-compact' : '')
 
   const gradingChecklistItems = useMemo(() => {
     if (!activeGrade) return []
@@ -1534,6 +1614,18 @@ function App() {
       setGradingListRecords(records)
       setGradingSessionRecordIds([])
       setCoachSelection({})
+      setGradingResults({})
+      setCompletedItems({})
+      setPlayerData({
+        name: 'Jane Bloggs',
+        licenseNumber: '',
+        lastCoachingDate: DEFAULT_LAST_GRADING_DATE,
+        club: 'Cabra Judo Club',
+        coach: DEFAULT_COACH_LABEL,
+        gradingOfficerLicense: DEFAULT_COACH_DETAILS.licenseNumber,
+        gradingDate: getTodayDateString()
+      })
+      setSelectedGradeId('1s')
       setDefaultCoachCsvLoaded(true)
       if (records.length > 0) {
         setGradingListMessage(`Loaded ${records.length} records from ${file.name}`)
@@ -1949,8 +2041,9 @@ function App() {
     setCoachSelection({})
   }, [coachGroupFilter])
 
-  const downloadCertificate = async (resultOverride = activeGradingResult) => {
-    if (!certificateRef.current) return
+  // Capture the current certificate DOM nodes to canvas data before any state changes.
+  const captureCertCanvases = async () => {
+    if (!certificateRef.current) return null
 
     await waitForElementImages(certificateRef.current)
 
@@ -1992,9 +2085,59 @@ function App() {
       }
     }
 
-    const out = await PDFDocument.create()
-    const coverPage = out.addPage([841.89, 595.28])
-    const coverImage = await out.embedPng(dataUrlToUint8Array(coverCanvas.toDataURL('image/png')))
+    let reportCanvas = null
+    let reportLogoOverlayRect = null
+    let previousReportLogoVisibility = ''
+    if (certificateReportRef.current) {
+      const reportRect = certificateReportRef.current.getBoundingClientRect()
+      const reportLogoElement = certificateReportRef.current.querySelector('.report-ija-logo')
+
+      if (reportLogoElement && reportRect.width > 0 && reportRect.height > 0) {
+        const reportLogoRect = reportLogoElement.getBoundingClientRect()
+        const reportLogoSrc = reportLogoElement.currentSrc || reportLogoElement.getAttribute('src') || ''
+
+        if (reportLogoSrc && reportLogoRect.width > 0 && reportLogoRect.height > 0) {
+          reportLogoOverlayRect = {
+            src: reportLogoSrc,
+            x: (reportLogoRect.left - reportRect.left) / reportRect.width,
+            y: (reportLogoRect.top - reportRect.top) / reportRect.height,
+            width: reportLogoRect.width / reportRect.width,
+            height: reportLogoRect.height / reportRect.height
+          }
+
+          // Hide DOM logo before html2canvas to avoid distorted raster output.
+          previousReportLogoVisibility = reportLogoElement.style.visibility
+          reportLogoElement.style.visibility = 'hidden'
+        }
+      }
+
+      await waitForElementImages(certificateReportRef.current)
+      try {
+        reportCanvas = await html2canvas(certificateReportRef.current, {
+          scale: 2,
+          useCORS: true,
+          imageTimeout: 0,
+          backgroundColor: '#f4f5f4'
+        })
+      } finally {
+        if (reportLogoElement) {
+          reportLogoElement.style.visibility = previousReportLogoVisibility
+        }
+      }
+    }
+
+    return { coverCanvas, beltOverlayRect, reportCanvas, reportLogoOverlayRect }
+  }
+
+  const addCertPagesToPdf = async (pdfDoc) => {
+    const captured = await captureCertCanvases()
+    if (!captured) return
+    await addCapturedPagesToPdf(pdfDoc, captured)
+  }
+
+  const addCapturedPagesToPdf = async (pdfDoc, { coverCanvas, beltOverlayRect, reportCanvas, reportLogoOverlayRect }) => {
+    const coverPage = pdfDoc.addPage([841.89, 595.28])
+    const coverImage = await pdfDoc.embedPng(dataUrlToUint8Array(coverCanvas.toDataURL('image/png')))
     const coverDims = coverImage.scale(1)
     const coverScale = Math.min(coverPage.getWidth() / coverDims.width, coverPage.getHeight() / coverDims.height)
     const coverWidth = coverDims.width * coverScale
@@ -2009,7 +2152,7 @@ function App() {
     if (beltOverlayRect) {
       try {
         const beltPngDataUrl = await rasterizeImageToPngDataUrl(beltOverlayRect.src, 3)
-        const beltPng = await out.embedPng(dataUrlToUint8Array(beltPngDataUrl))
+        const beltPng = await pdfDoc.embedPng(dataUrlToUint8Array(beltPngDataUrl))
         const coverX = (coverPage.getWidth() - coverWidth) / 2
         const coverY = (coverPage.getHeight() - coverHeight) / 2
 
@@ -2024,14 +2167,9 @@ function App() {
       }
     }
 
-    if (certificateReportRef.current) {
-      const reportCanvas = await html2canvas(certificateReportRef.current, {
-        scale: 2,
-        useCORS: true,
-        backgroundColor: '#f4f5f4'
-      })
-      const reportPage = out.addPage([841.89, 595.28])
-      const reportImage = await out.embedPng(dataUrlToUint8Array(reportCanvas.toDataURL('image/png')))
+    if (reportCanvas) {
+      const reportPage = pdfDoc.addPage([841.89, 595.28])
+      const reportImage = await pdfDoc.embedPng(dataUrlToUint8Array(reportCanvas.toDataURL('image/png')))
       const reportDims = reportImage.scale(1)
       const reportScale = Math.min(reportPage.getWidth() / reportDims.width, reportPage.getHeight() / reportDims.height)
       const reportWidth = reportDims.width * reportScale
@@ -2042,7 +2180,43 @@ function App() {
         width: reportWidth,
         height: reportHeight
       })
+
+      if (reportLogoOverlayRect) {
+        try {
+          const reportLogoImage = await embedPdfImageFromSource(pdfDoc, reportLogoOverlayRect.src)
+          if (reportLogoImage) {
+            const reportX = (reportPage.getWidth() - reportWidth) / 2
+            const reportY = (reportPage.getHeight() - reportHeight) / 2
+            const boxWidth = reportLogoOverlayRect.width * reportWidth
+            const boxHeight = reportLogoOverlayRect.height * reportHeight
+            const boxX = reportX + (reportLogoOverlayRect.x * reportWidth)
+            const boxY = reportY + ((1 - reportLogoOverlayRect.y - reportLogoOverlayRect.height) * reportHeight)
+
+            const logoDims = reportLogoImage.scale(1)
+            const logoScale = Math.min(boxWidth / logoDims.width, boxHeight / logoDims.height)
+            const logoWidth = logoDims.width * logoScale
+            const logoHeight = logoDims.height * logoScale
+
+            reportPage.drawImage(reportLogoImage, {
+              x: boxX + ((boxWidth - logoWidth) / 2),
+              y: boxY + ((boxHeight - logoHeight) / 2),
+              width: logoWidth,
+              height: logoHeight
+            })
+          }
+        } catch {
+          // If logo overlay fails, keep captured report page.
+        }
+      }
     }
+  }
+
+  const downloadCertificate = async () => {
+    const captured = await captureCertCanvases()
+    if (!captured) return
+
+    const out = await PDFDocument.create()
+    await addCapturedPagesToPdf(out, captured)
 
     const bytes = await out.save()
     const blob = new Blob([bytes], { type: 'application/pdf' })
@@ -2055,6 +2229,66 @@ function App() {
     anchor.click()
     anchor.remove()
     URL.revokeObjectURL(url)
+  }
+
+  useEffect(() => {
+    if (!batchCertExport) return
+
+    const { records, index, pdfDoc } = batchCertExport
+
+    if (index >= records.length) {
+      pdfDoc.save().then((bytes) => {
+        const blob = new Blob([bytes], { type: 'application/pdf' })
+        const url = URL.createObjectURL(blob)
+        const anchor = document.createElement('a')
+        anchor.href = url
+        anchor.download = 'cabra-certificates-all.pdf'
+        document.body.appendChild(anchor)
+        anchor.click()
+        anchor.remove()
+        URL.revokeObjectURL(url)
+      })
+      setBatchCertExport(null)
+      return
+    }
+
+    addCertPagesToPdf(pdfDoc).then(() => {
+      const nextIndex = index + 1
+      if (nextIndex < records.length) {
+        const nextRecord = records[nextIndex]
+        setSelectedGradingRecordId(nextRecord.id)
+        setPlayerData((prev) => ({
+          ...prev,
+          name: nextRecord.name || prev.name,
+          licenseNumber: nextRecord.ijaNumber || prev.licenseNumber,
+          lastCoachingDate: nextRecord.lastGradingDate || prev.lastCoachingDate
+        }))
+        const nextTargetGradeId = getTargetGradeIdForRecord(nextRecord)
+        if (nextTargetGradeId) setSelectedGradeId(nextTargetGradeId)
+      }
+      setBatchCertExport({ records, index: nextIndex, pdfDoc })
+    })
+  }, [batchCertExport])
+
+  const downloadAllCertificates = async () => {
+    const passedRecords = gradingSessionExportRecords.filter(
+      (record) => gradingResults[`record:${record.id}`] === 'Pass'
+    )
+    if (passedRecords.length === 0) return
+
+    const pdfDoc = await PDFDocument.create()
+    const firstRecord = passedRecords[0]
+    setViewMode('grading')
+    setSelectedGradingRecordId(firstRecord.id)
+    setPlayerData((prev) => ({
+      ...prev,
+      name: firstRecord.name || prev.name,
+      licenseNumber: firstRecord.ijaNumber || prev.licenseNumber,
+      lastCoachingDate: firstRecord.lastGradingDate || prev.lastCoachingDate
+    }))
+    const firstTargetGradeId = getTargetGradeIdForRecord(firstRecord)
+    if (firstTargetGradeId) setSelectedGradeId(firstTargetGradeId)
+    setBatchCertExport({ records: passedRecords, index: 0, pdfDoc })
   }
 
   const resetAll = () => {
@@ -2119,14 +2353,15 @@ function App() {
   }
 
   const handlePassAndDownload = async () => {
+    // Capture DOM before any state changes so the cert reflects the current candidate.
+    const captured = await captureCertCanvases()
+
     markAllChecklistItemsComplete()
 
     setGradingResults((prev) => ({
       ...prev,
       [activeGradingResultKey]: 'Pass'
     }))
-
-    await downloadCertificate('Pass')
 
     if (isFinalSessionRecord) {
       setPlayerData((prev) => ({
@@ -2137,6 +2372,24 @@ function App() {
     } else {
       moveGradingRecord('next')
     }
+
+    // Build and download PDF in the background after advancing.
+    if (captured) {
+      const safeName = (playerData.name || 'student').toLowerCase().replaceAll(/[^a-z0-9]+/g, '-')
+      PDFDocument.create().then(async (out) => {
+        await addCapturedPagesToPdf(out, captured)
+        const bytes = await out.save()
+        const blob = new Blob([bytes], { type: 'application/pdf' })
+        const url = URL.createObjectURL(blob)
+        const anchor = document.createElement('a')
+        anchor.href = url
+        anchor.download = `cabra-certificate-${safeName}.pdf`
+        document.body.appendChild(anchor)
+        anchor.click()
+        anchor.remove()
+        URL.revokeObjectURL(url)
+      })
+    }
   }
 
   const beltFallbackStyle = {
@@ -2144,6 +2397,20 @@ function App() {
       activeGrade?.beltColors?.length > 1
         ? `linear-gradient(90deg, ${activeGrade.beltColors[0]} 0%, ${activeGrade.beltColors[0]} 50%, ${activeGrade.beltColors[1]} 50%, ${activeGrade.beltColors[1]} 100%)`
         : activeGrade?.beltColors?.[0] || '#f8fafc'
+  }
+
+  const ijaLogoDisplaySrc = ijaLogoProcessedSrc || ijaLogoUpload || IJA_LOGO
+  const ijaLogoFallbackSrc = ijaLogoUpload || IJA_LOGO
+
+  const handleIjaLogoError = (event) => {
+    const img = event.currentTarget
+    if (!img.dataset.ijaFallbackApplied && ijaLogoFallbackSrc) {
+      img.dataset.ijaFallbackApplied = 'true'
+      img.src = ijaLogoFallbackSrc
+      return
+    }
+
+    img.style.display = 'none'
   }
 
   const reportTheme = useMemo(() => {
@@ -2275,12 +2542,10 @@ function App() {
         <div className="cert-footer">
           <div className="ija-logo-wrap">
             <img
-              src={ijaLogoProcessedSrc || ijaLogoUpload || IJA_LOGO}
+              src={ijaLogoDisplaySrc}
               alt="IJA Logo"
               className="ija-logo"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-              }}
+              onError={handleIjaLogoError}
             />
           </div>
 
@@ -2315,7 +2580,7 @@ function App() {
       </div>
 
       <div
-        className={`certificate report-page ${inlinePreview ? 'inline-preview-surface' : ''}`}
+        className={`certificate report-page ${inlinePreview ? 'inline-preview-surface' : ''} ${reportDensityClassName}`.trim()}
         ref={certificateReportRef}
         style={{
           borderTop: `4px solid ${reportTheme.pageAccent}`
@@ -2327,12 +2592,10 @@ function App() {
             <p className="report-subtitle">Player Details</p>
           </div>
           <img
-            src={ijaLogoProcessedSrc || ijaLogoUpload || IJA_LOGO}
+            src={ijaLogoDisplaySrc}
             alt="IJA Logo"
             className="report-ija-logo"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none'
-            }}
+            onError={handleIjaLogoError}
           />
         </div>
 
@@ -2661,6 +2924,16 @@ function App() {
               disabled={gradingSessionExportRecords.length === 0}
             >
               Export Session PDF
+            </button>
+            <button
+              type="button"
+              className="btn btn-dark"
+              onClick={downloadAllCertificates}
+              disabled={!gradingSessionExportRecords.some((r) => gradingResults[`record:${r.id}`] === 'Pass') || Boolean(batchCertExport)}
+            >
+              {batchCertExport
+                ? `Exporting… (${batchCertExport.index}/${batchCertExport.records.length})`
+                : 'Export All Certs'}
             </button>
             <button
               type="button"
