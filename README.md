@@ -20,27 +20,76 @@ Cabra Grading is a React + Vite grading platform for Cabra Judo Club.
 
 ## Quick Start
 
-1. Install dependencies
+```bash
+# 1. Clone the repository
+git clone https://github.com/moloned/CabraGrading.git
+cd CabraGrading
 
-   npm install
+# 2. Install dependencies
+npm install
 
-2. Run the app
+# 3. Start the development server
+npm run dev
+```
 
-   npm run dev
+The app will open at **http://localhost:5173/CabraGrading/**.
 
-3. Build production assets
+### Build & Preview
 
-   npm run build
+```bash
+npm run build      # Build production assets
+npm run preview    # Preview the production build locally
+```
 
-4. Preview production build
+## Usage — Coach Setup
 
-   npm run preview
+When the app starts you land on the **Coach Setup** page. This is where you configure your session before grading begins.
+
+### 1. Upload a Grading List
+
+- Click **Grading List (CSV/JSON)** and select your file.
+- The default list ships as `public/GradingList.csv`. You can download the current list with the **Download** button, edit it in a spreadsheet, and re-upload it.
+- The CSV parser is tolerant of common header variants for names, licence numbers, grades, dates, and coach-related fields.
+
+### 2. Upload Club & IJA Logos (optional)
+
+- **Club Logo** — Click the *Club Logo (optional upload)* file picker and choose your club crest or badge image (PNG/JPG). If no file is uploaded the default `public/CabraLogo.png` is used.
+- **IJA Logo** — Click the *IJA Logo (optional upload)* file picker to replace the default IJA crest (`public/clean/IJA-logo-nobg.png`).
+- Both logos appear on certificates and the session summary PDF.
+
+### 3. Upload a Coach Photo (optional)
+
+- Click **Coach Photo (optional upload)** and choose a headshot. If nothing is uploaded the default photo (`public/alonzo.jpg`) is used.
+- A preview thumbnail is shown below the upload field.
+
+### 4. Enter Coach Details
+
+| Field | Description |
+|---|---|
+| **Coach Name** | Full name of the grading officer (appears on certificates and report) |
+| **Coach License Number** | IJA licence number, e.g. `19-0010` |
+| **Last Grading Date** | Date in `DD/MM/YYYY` format |
+
+### 5. Customising Default Assets
+
+To permanently replace the shipped defaults, swap the files in the `public/` folder:
+
+| Default file | Purpose |
+|---|---|
+| `public/CabraLogo.png` | Club logo |
+| `public/IJA-logo.png` | IJA logo (raw; a background-removed version is auto-generated in `public/clean/`) |
+| `public/alonzo.jpg` | Default coach photo |
+| `public/GradingList.csv` | Default grading list loaded on startup |
+
+After changing any of these files, restart the dev server or rebuild for the changes to take effect.
 
 ## Available Scripts
 
-- npm run dev: Start Vite development server
-- npm run build: Build production assets
-- npm run preview: Preview production build locally
+| Command | Description |
+|---|---|
+| `npm run dev` | Start Vite development server |
+| `npm run build` | Build production assets |
+| `npm run preview` | Preview production build locally |
 
 ## Data Inputs
 
