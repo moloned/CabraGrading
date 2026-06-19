@@ -1,5 +1,6 @@
-import { StrictMode } from 'react'
+import { StrictMode, useState } from 'react'
 import { createRoot } from 'react-dom/client'
+import { X } from 'lucide-react'
 import './study-guide.css'
 import data from './data/adultKyuStudyGuideData.json'
 
@@ -38,17 +39,19 @@ function KyuStudyGuidePage() {
   const syllabusPdfUrl = 'https://irishjudoassociation.ie/wp-content/uploads/2024/02/IJA-Grading-Syllabus-V8-2024-16.01.2024.pdf'
   const syllabusCover = publicAsset('/ija-grading-info-cover.png')
 
+
+
   return (
     <div className="sg-page">
       <header className="sg-hero">
         <p className="sg-kicker">Cabra Judo Club</p>
         <h1>Adult Kyu Study Guide</h1>
         <div className="sg-koka-card">
-          <a href={syllabusPdfUrl} target="_blank" rel="noreferrer" className="sg-koka-thumb-link" aria-label="Open IJA Grading Information 2024 PDF">
+          <a href={syllabusPdfUrl} className="sg-koka-thumb-link" aria-label="Open IJA Grading Information 2024 PDF">
             <img src={syllabusCover} alt="IJA Grading Information 2024 cover" className="sg-koka-thumb" loading="lazy" />
           </a>
           <div className="sg-koka-actions">
-            <a href={syllabusPdfUrl} target="_blank" rel="noreferrer" className="sg-koka-button">
+            <a href={syllabusPdfUrl} className="sg-koka-button">
               Open IJA Grading PDF
             </a>
             <a href={publicAsset('/index.html')} className="sg-home-link sg-home-link-inline">
@@ -88,7 +91,7 @@ function KyuStudyGuidePage() {
                         <li key={`${grade.gradeId}-${categoryKey}-${index}`}>
                           <span>{item.name}</span>
                           {item.youtubeUrl ? (
-                            <a href={item.youtubeUrl} target="_blank" rel="noreferrer">Watch</a>
+                            <a href={item.youtubeUrl}>Watch</a>
                           ) : (
                             <em>No video</em>
                           )}
@@ -101,6 +104,7 @@ function KyuStudyGuidePage() {
           </section>
         ))}
       </main>
+
     </div>
   )
 }

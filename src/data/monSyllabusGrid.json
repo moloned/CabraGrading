@@ -1,0 +1,609 @@
+{
+  "generatedAt": "2026-06-19T13:39:14.320Z",
+  "tachiwaza": [
+    {
+      "name": "De Ashi Barai",
+      "videoUrl": "https://www.youtube.com/watch?v=2-5at8cWc0E&t=171s",
+      "requirements": {
+        "2": "p12",
+        "3": "p12",
+        "4": "p12",
+        "5": "p12",
+        "6": "p12",
+        "7": "p12",
+        "8": "p12",
+        "9": "p12",
+        "10": "p13",
+        "11": "p12",
+        "12": "p12"
+      }
+    },
+    {
+      "name": "Uki Goshi",
+      "videoUrl": "https://www.youtube.com/watch?v=2-5at8cWc0E&t=213s",
+      "requirements": {
+        "2": "p16",
+        "3": "p16",
+        "4": "p16",
+        "5": "p16",
+        "6": "p16",
+        "7": "p16",
+        "8": "p16",
+        "9": "p16",
+        "10": "p16",
+        "11": "p16",
+        "12": "p16"
+      }
+    },
+    {
+      "name": "O Soto Gari",
+      "videoUrl": "https://www.youtube.com/watch?v=c-A_nP7mKAc",
+      "requirements": {
+        "2": "p20",
+        "3": "p20",
+        "4": "p20",
+        "5": "p20",
+        "6": "p20",
+        "7": "p20",
+        "8": "p20",
+        "9": "p20",
+        "10": "p20",
+        "11": "p20",
+        "12": "p20"
+      }
+    },
+    {
+      "name": "O Uchi Gari",
+      "videoUrl": "https://www.youtube.com/watch?v=0itJFhV9pDQ",
+      "requirements": {
+        "3": "p26",
+        "4": "p26",
+        "5": "p26",
+        "6": "p26",
+        "7": "p26",
+        "8": "p26",
+        "9": "p26",
+        "10": "p26",
+        "11": "p26",
+        "12": "p26"
+      }
+    },
+    {
+      "name": "Hiza Guruma",
+      "videoUrl": "https://www.youtube.com/watch?v=JPJx9-oAVns",
+      "requirements": {
+        "3": "p28",
+        "4": "p28",
+        "5": "p28",
+        "6": "p28",
+        "7": "p28",
+        "8": "p28",
+        "9": "p28",
+        "10": "p28",
+        "11": "p28",
+        "12": "p28"
+      }
+    },
+    {
+      "name": "Sasae Tsurikomi Ashi",
+      "videoUrl": "https://www.youtube.com/watch?v=699i--pvYmE",
+      "requirements": {
+        "3": "p30",
+        "4": "p30",
+        "5": "p30",
+        "6": "p30",
+        "7": "p30",
+        "8": "p30",
+        "9": "p30",
+        "10": "p30",
+        "11": "p30",
+        "12": "p30"
+      }
+    },
+    {
+      "name": "Morote Seoi Nage",
+      "videoUrl": "https://www.youtube.com/watch?v=zIq0xI0ogxk",
+      "requirements": {
+        "4": "p34",
+        "5": "p35",
+        "6": "p36",
+        "7": "p37",
+        "8": "p38",
+        "9": "p39",
+        "10": "p40",
+        "11": "p41",
+        "12": "p42"
+      }
+    },
+    {
+      "name": "O Goshi",
+      "videoUrl": "https://www.youtube.com/watch?v=yhu1mfy2vJ4",
+      "requirements": {
+        "4": "p36",
+        "5": "p37",
+        "6": "p38",
+        "7": "p39",
+        "8": "p40",
+        "9": "p41",
+        "10": "p42",
+        "11": "p43",
+        "12": "p44"
+      }
+    },
+    {
+      "name": "Ippon Seoi Nage",
+      "videoUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=175s",
+      "requirements": {
+        "4": "p38",
+        "5": "p39",
+        "6": "p40",
+        "7": "p41",
+        "8": "p42",
+        "9": "p43",
+        "10": "p44",
+        "11": "p45",
+        "12": "p46"
+      }
+    },
+    {
+      "name": "Kosoto gari",
+      "videoUrl": "https://www.youtube.com/watch?v=jeQ541ScLB4",
+      "requirements": {
+        "5": "p42",
+        "6": "p34",
+        "7": "p34",
+        "8": "p34",
+        "9": "p34",
+        "10": "p34",
+        "11": "p34",
+        "12": "p34"
+      }
+    },
+    {
+      "name": "Ko uchi gari",
+      "videoUrl": "https://www.youtube.com/watch?v=3Jb3tZvr9Ng",
+      "requirements": {
+        "5": "p44",
+        "6": "p36",
+        "7": "p36",
+        "8": "p36",
+        "9": "p36",
+        "10": "p36",
+        "11": "p36",
+        "12": "p36"
+      }
+    },
+    {
+      "name": "Tai o toshi",
+      "videoUrl": "https://www.youtube.com/watch?v=4x6S3Q-Ktv8",
+      "requirements": {
+        "5": "p46",
+        "6": "p38",
+        "7": "p38",
+        "8": "p38",
+        "9": "p38",
+        "10": "p38",
+        "11": "p38",
+        "12": "p38"
+      }
+    },
+    {
+      "name": "Harai Goshi",
+      "videoUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=116s",
+      "requirements": {
+        "6": "p50",
+        "7": "p50",
+        "8": "p50",
+        "9": "p50",
+        "10": "p50",
+        "11": "p50",
+        "12": "p50"
+      }
+    },
+    {
+      "name": "Koshi Garuma",
+      "videoUrl": "https://www.youtube.com/watch?v=e_049C_x3x8",
+      "requirements": {
+        "6": "p52",
+        "7": "p52",
+        "8": "p52",
+        "9": "p52",
+        "10": "p52",
+        "11": "p52",
+        "12": "p52"
+      }
+    },
+    {
+      "name": "O Garuma",
+      "videoUrl": "https://www.youtube.com/watch?v=1F7vH1YwTss",
+      "requirements": {
+        "6": "p54",
+        "7": "p54",
+        "8": "p54",
+        "9": "p54",
+        "10": "p54",
+        "11": "p54",
+        "12": "p54"
+      }
+    },
+    {
+      "name": "Uchimata",
+      "videoUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=72s",
+      "requirements": {
+        "7": "p58",
+        "8": "p58",
+        "9": "p58",
+        "10": "p58",
+        "11": "p58",
+        "12": "p58"
+      }
+    },
+    {
+      "name": "Okuri Ashi Barai",
+      "videoUrl": "https://www.youtube.com/watch?v=60d_U04F6kY",
+      "requirements": {
+        "7": "p60",
+        "8": "p60",
+        "9": "p60",
+        "10": "p60",
+        "11": "p60",
+        "12": "p60"
+      }
+    },
+    {
+      "name": "Tsurikomi Goshi",
+      "videoUrl": "https://www.youtube.com/watch?v=R9X2H55R3O0",
+      "requirements": {
+        "8": "p64",
+        "9": "p64",
+        "10": "p64",
+        "11": "p64",
+        "12": "p64"
+      }
+    },
+    {
+      "name": "Sode Tsuri Komi Goshi",
+      "videoUrl": "https://www.youtube.com/watch?v=yN3dG2c-c8M",
+      "requirements": {
+        "8": "p66",
+        "9": "p66",
+        "10": "p66",
+        "11": "p66",
+        "12": "p66"
+      }
+    },
+    {
+      "name": "Hane Goshi",
+      "videoUrl": "https://www.youtube.com/watch?v=R71E7mC_w6Q",
+      "requirements": {
+        "9": "p70",
+        "10": "p70",
+        "11": "p70",
+        "12": "p70"
+      }
+    },
+    {
+      "name": "Tsuri Goshi",
+      "videoUrl": "https://www.youtube.com/watch?v=WqjIib9VnL8",
+      "requirements": {
+        "9": "p72",
+        "10": "p72",
+        "11": "p72",
+        "12": "p72"
+      }
+    },
+    {
+      "name": "Ashi Guruma",
+      "videoUrl": "https://www.youtube.com/watch?v=VpG9N6zR708",
+      "requirements": {
+        "10": "p76",
+        "11": "p76",
+        "12": "p76"
+      }
+    },
+    {
+      "name": "Harai Tsurikomi Ashi",
+      "videoUrl": "https://www.youtube.com/watch?v=H723gYyBmgI",
+      "requirements": {
+        "10": "p78",
+        "11": "p78",
+        "12": "p78"
+      }
+    },
+    {
+      "name": "Yoko O Toshi",
+      "videoUrl": "https://www.youtube.com/watch?v=T_8UqWwLg8o",
+      "requirements": {
+        "11": "p82",
+        "12": "p82"
+      }
+    },
+    {
+      "name": "Ko-Soto-Gake",
+      "videoUrl": "https://www.youtube.com/watch?v=f93i4Y-HhQA",
+      "requirements": {
+        "11": "p84",
+        "12": "p84"
+      }
+    },
+    {
+      "name": "Tomoe Nage",
+      "videoUrl": "https://www.youtube.com/watch?v=M99b24l22L8",
+      "requirements": {
+        "12": "p88"
+      }
+    }
+  ],
+  "newaza": [
+    {
+      "name": "Kesa-Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=NDaQuJOFBYk",
+      "requirements": {
+        "2": "p24",
+        "3": "x",
+        "4": "x",
+        "5": "x",
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Kuzure-Kesa-Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=Q2fb9jaoUFQ",
+      "requirements": {
+        "2": "p14",
+        "3": "x",
+        "4": "x",
+        "5": "x",
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Kata-Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=zQR3IOXxO_Q",
+      "requirements": {
+        "2": "x",
+        "3": "x",
+        "4": "x",
+        "5": "x",
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Tate-Shiho-Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=55-rFmBx53g",
+      "requirements": {
+        "2": "p18",
+        "3": "x",
+        "4": "x",
+        "5": "x",
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Mune Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=zQR3IOXxO_Q",
+      "requirements": {
+        "2": "x",
+        "3": "x",
+        "4": "x",
+        "5": "x",
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Kuzure Tate Shiho Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=YUrogQWdwiY",
+      "requirements": {
+        "2": "p22",
+        "3": "x",
+        "4": "x",
+        "5": "x",
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Yoko-Shiho-Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=199s",
+      "requirements": {
+        "3": "p32",
+        "4": "x",
+        "5": "x",
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Kuzure Yoko Shiho Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=Tq_rXw2uXfA",
+      "requirements": {
+        "4": "p40",
+        "5": "x",
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Kuzure-Kami-Shiho-Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=YUrogQWdwiY",
+      "requirements": {
+        "5": "p48",
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Kami-Shiho-Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=203s",
+      "requirements": {
+        "5": "p48",
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Uki-Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=x7d5eE3z56Y",
+      "requirements": {
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Ura-Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=eLwW7eJq7eI",
+      "requirements": {
+        "6": "x",
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Ushiro-kesa-gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=-wZKFsubC04&t=195s",
+      "requirements": {
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Mukura Kesa Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=e5HrhANfDcU",
+      "requirements": {
+        "7": "x",
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Sangaku-Gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=Hpy2uT_xRss",
+      "requirements": {
+        "8": "x",
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Ude-hishigi-juji-gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=veM5RFdjo0U&t=5m",
+      "requirements": {
+        "9": "x",
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Ude-garami",
+      "videoUrl": "https://www.youtube.com/watch?v=0k5G9k9G3Jg",
+      "requirements": {
+        "10": "x",
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Ude-hishigi-ude-gatame",
+      "videoUrl": "https://www.youtube.com/watch?v=tT8j2uS8wA4",
+      "requirements": {
+        "11": "x",
+        "12": "x"
+      }
+    },
+    {
+      "name": "Gyaku Jūji-jime",
+      "videoUrl": "https://www.youtube.com/watch?v=t3tQriIPdlI",
+      "requirements": {
+        "12": "x"
+      }
+    },
+    {
+      "name": "Kata-juji-jime",
+      "videoUrl": "https://www.youtube.com/watch?v=y2s4wYyRntc",
+      "requirements": {
+        "12": "x"
+      }
+    },
+    {
+      "name": "Nami-juji-jime",
+      "videoUrl": "https://www.youtube.com/watch?v=y2s4wYyRntc",
+      "requirements": {
+        "12": "x"
+      }
+    }
+  ]
+}

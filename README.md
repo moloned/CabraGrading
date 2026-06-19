@@ -79,7 +79,7 @@ Coach-page summary report with session rows and logos.
 
 ## Belt Mapping
 
-Default belt images are loaded from public/belts and selected by grade for both preview and certificate output.
+Belt styles are dynamically rendered via CSS based on the `beltColors` array configured for each grade. This fallback ensures accurate rendering of solid and split belt colors directly on the screen and within generated certificates, replacing the need for static belt images.
 
 ## Utility Scripts
 

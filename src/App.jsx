@@ -8,6 +8,7 @@ import {
   ChevronRight,
   Zap,
   Download,
+  X,
 } from 'lucide-react'
 import html2canvas from 'html2canvas'
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib'
@@ -17,11 +18,16 @@ const publicAsset = (path) => `${import.meta.env.BASE_URL}${String(path || '').r
 
 const CLUB_LOGO = publicAsset('/clean/CabraLogo-nobg.png')
 const IJA_LOGO = publicAsset('/clean/IJA-logo-nobg.png')
-const BELT_IMAGE = publicAsset('/belts/white.svg')
 const MASCOT_IMAGE = publicAsset('/clean/JudoMonkey-nobg.png')
 const SENIOR_MASCOT_IMAGE = publicAsset('/CabraGOATS.png')
 const DEFAULT_COACH_CSV = publicAsset('/GradingList.csv')
 const DEFAULT_COACH_PHOTO = publicAsset('/alonzo.jpg')
+const extractYoutubeId = (url) => {
+  if (!url) return null
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|v\/))([a-zA-Z0-9_-]{11})/)
+  return match ? match[1] : null
+}
+
 const getTodayDateString = () => new Date().toLocaleDateString('en-GB')
 const DEFAULT_LAST_GRADING_DATE = getTodayDateString()
 const DEFAULT_COACH_DETAILS = {
@@ -31,27 +37,6 @@ const DEFAULT_COACH_DETAILS = {
   club: 'Cabra Judo Club'
 }
 const DEFAULT_COACH_LABEL = [DEFAULT_COACH_DETAILS.name, DEFAULT_COACH_DETAILS.title].filter(Boolean).join(' - ')
-
-const BELT_BY_GRADE = {
-  '1s': publicAsset('/belts/red.svg'),
-  '2s': publicAsset('/belts/red.svg'),
-  '3s': publicAsset('/belts/red.svg'),
-  '1m': publicAsset('/belts/white.svg'),
-  '2m': publicAsset('/belts/red.svg'),
-  '3m': publicAsset('/belts/white-yellow.svg'),
-  '4m': publicAsset('/belts/yellow.svg'),
-  '5m': publicAsset('/belts/yellow-orange.svg'),
-  '6m': publicAsset('/belts/orange.svg'),
-  '7m': publicAsset('/belts/orange-green.svg'),
-  '8m': publicAsset('/belts/green.svg'),
-  '9m': publicAsset('/belts/green-blue.svg'),
-  '10m': publicAsset('/belts/blue.svg'),
-  '11m': publicAsset('/belts/blue-brown.svg'),
-  '12m': publicAsset('/belts/brown.svg'),
-  '5k': publicAsset('/belts/yellow.svg'),
-  '4k': publicAsset('/belts/orange.svg'),
-  '3k': publicAsset('/belts/green.svg')
-}
 
 const SENIOR_BELT_COLORS = {
   '5k': ['#facc15'],
@@ -2444,8 +2429,7 @@ function App() {
     }
   }, [activeGrade])
 
-  const defaultBeltForGrade = BELT_BY_GRADE[selectedGradeId] || BELT_IMAGE
-  const currentBeltSrc = beltImageUpload || defaultBeltForGrade
+  const currentBeltSrc = beltImageUpload || ''
 
   useEffect(() => {
     setBeltImageError(false)
@@ -2486,8 +2470,12 @@ function App() {
 
     if (!href) return text
 
+    const handleLinkClick = (e) => {
+      e.stopPropagation()
+    }
+
     return (
-      <a href={href} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>
+      <a href={href} onClick={handleLinkClick}>
         {text}
       </a>
     )
@@ -2969,16 +2957,12 @@ function App() {
           <a
             className="btn topbar-study-link topbar-study-link-mon"
             href={publicAsset('/study-guide.html')}
-            target="_blank"
-            rel="noreferrer"
           >
             Mon Study Guide
           </a>
           <a
             className="btn topbar-study-link topbar-study-link-kyu"
             href={publicAsset('/kyu-study-guide.html')}
-            target="_blank"
-            rel="noreferrer"
           >
             Kyu Study Guide
           </a>
